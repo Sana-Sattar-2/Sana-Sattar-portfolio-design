@@ -1,0 +1,110 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#formcontainer{
+    border-radius:70px  0px;
+    width: 40%;
+    margin:50px auto ;
+    padding:5%;
+    background-color:#ffffff7c;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    /* background: linear-gradient(90deg, rgb(247 247 247), rgb(201 141 141)); */
+    backdrop-filter: blur (100px);
+    transition: 10s;
+box-shadow:30px -30px 10px hsla(221, 88%, 61%, 0.74);
+}
+.form-content{
+    padding-left:35%;
+}
+label {     
+    cursor: pointer;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;   
+box-shadow:10px -10px 40px  rgb(77, 3, 173);
+}
+  .formtittle{
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .inputgroup{
+    margin: 20px 0px ;
+  }
+  .input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    padding-left: 60px;
+    background-color: transparent;
+    font-size: larger;
+    color: black;
+    background-image: url("./email.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+
+  }
+  .input1{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    padding-left: 60px;
+    background-color: transparent;
+    font-size: larger;
+    color: black;
+    background-image: url("./password\ logo.png");
+    background-repeat: no-repeat;
+    background-size: 5%;
+
+  }
+  .loginbtn{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(5, 5, 134);
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .loginbtn:link,
+.loginbtn:visited {
+  background-color: rgb(15, 15, 230);
+  color: aliceblue;
+  width: 70%;
+  display: inline-block;
+  padding-left: 20%;
+  font-size: 20px;
+  padding: 12px;
+  margin: 6%;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  text-decoration: none;
+}
+.loginbtn:hover,
+.loginbtn:active {
+  background-color: rgb(74, 74, 131);
+  text-decoration: none;
+  color: wheat;
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+}

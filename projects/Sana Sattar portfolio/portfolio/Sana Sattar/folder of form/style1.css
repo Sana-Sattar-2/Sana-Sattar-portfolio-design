@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+background: url(./images/javaaaa.png);
+background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container{
+ 
+  width: 30%;
+  margin-left: 40%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  border: 1px solid white;
+  background-color: antiquewhite;
+  box-shadow:1px -1px 11px 11px hsl(210, 100%, 100%);
+display: block;
+border-radius: 4px;
+margin-top: 10%;
+}
+img{
+    height: 180px;
+    width: 300px;
+    margin-left: 11%;
+    background-image: url("./images/card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+     /* margin-left: 33.5%; */
+    margin-top: -100px ;
+    /* margin-top: 5%; */
+    border-radius:5%;
+    /* padding-right: 20%; */
+    box-shadow:-1px 0px 20px 11px hsla(239, 87%, 47%, 0.541);
+}
+.form-contnt{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin: 10%;
+    font: 1em sans-serif;
+    color: grey;
+    font-size: larger;
+}
+input[type="Number"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 5%;
+    outline: none;
+    border-top: 0.00000837487837487px  solid rgb(66, 56, 56);
+}
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 5%;
+    outline: none;
+    border-bottom:0.00000837487837487px solid rgb(66, 56, 56);
+}
+input[type="text1"]{
+    width: 5%;
+    height: 10px;
+    border-radius: 5%;
+    outline: none;
+    border: 0.00000837487837487px solid   rgb(66, 56, 56);
+}
+
+ input[type="text2"]{
+    width: 32%;
+    height: 30px;
+    outline: none;
+    border:  0.00000837487837487px solid   rgb(66, 56, 56);
+}
+#label{
+    padding-right: 25%;
+}
+#month{
+    width: 32%;
+    height: 30px;
+    display: inline;
+    outline: none;
+    border:  0.00000837487837487px solid   rgb(66, 56, 56);
+}
+#year{
+    width: 32%;
+    height: 30px;
+    display: inline;
+    outline: none;
+    border:  0.00000837487837487px solid   rgb(66, 56, 56);
+}
+.form-wrapper{
+    display: block;
+    border: 0px solid;
+}
+a:link,
+a:visited {
+  background-color: rgb(5, 5, 247);
+  color: aliceblue;
+  width: 90%;
+  display: inline-block;
+  font-size: 20px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  background-color: rgb(84, 84, 201);
+  text-decoration: none;
+  color: wheat;
+}
+.submit{
+  border: none;
+  font-size: 30px;
+  margin: 5%;
+  width: 100%;
+  font: 1em sans-serif;
+  font-size: 33px;
+  color: azure;
+  text-decoration: none;
+}

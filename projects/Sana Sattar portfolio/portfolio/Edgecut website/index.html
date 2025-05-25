@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Edgecut </title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href=" https://reactbits.dev/default/TextAnimations/SplitText">
+
+  <link rel="stylesheet" href="./bootstrap/css/customboostrap.css">
+</head>
+
+<body>
+  <!-----------navbar Section Start-------------->
+  <div class="container-fluid  ps-4 pe-4">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand me-3 ms-2" href="#"> <span class="h4 text-uppercase "> Edgecut</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  ps-5 " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0  gap-xl-5 gap-md-2 ms-auto ps-5 text-dark " >
+            <li class="nav-item ps-5">
+              <a class="nav-link  text-uppercase  " aria-current="page" href="#" id="we">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#" >about</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-uppercase" href="#">
+                furnitures
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase ">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-uppercase">contact us</a>
+            </li>
+
+          </ul>
+          <form class="d-flex gap-5  me-3" role="search">
+
+            <a class="nav-link  text-uppercase">Login <i class="ri-user-3-fill"></i> &nbsp; &nbsp; &nbsp;<i
+                class="ri-search-line "></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+  </div>
+  <!-----------header section  with carousel -------------->
+  <div class="container-fluid   ">
+    <div class="carousel slide mb-5 " data-bs-ride="carousel" id="carouselExampleAutoplaying">
+      <div class="carousel-inner ps-4   pe-4 ">
+        <div class="carousel-item active  bg-light">
+          <div class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-5 co ps-md-3  ps-sm-5 pe-sm-5  ">
+                <h1 style="font-weight: 760;" class="text-dark mt-5  text-uppercase " data-aos="fade-up">
+                  For All Your <br>
+                  Furniture Needs
+                </h1>
+                <p class="pt-3 pb-3" data-aos="fade-left" id="break">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.</p>
+                <div class="d d-flex align-item-center  mb-5 ">
+                  <button type="button" class="btn-box  btn1  mb-md-5 mb-lg-5 ps-2 pe-2 " data-aos="fade-up"> <strong>Contact us</strong> 
+                    </button>
+                  <button type="button" class="btn-box  btn2 ms-2  mb-md-5 mb-lg-5  ps-2 pe-2" data-aos="fade-up"> <strong>About Us</strong> 
+                   </button>
+                </div>
+
+              </div>
+              <div class="col-md-7 ps-md-2 pe-md-2 ps-sm-5 pe-sm-5">
+                <img src="./images/slider-img.png" alt="" class=" w-100  pt-sm-0 pt-md-5 pt-lg-5" data-aos="fade-up">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-light">
+          <div class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-5 ps-md-2 pe-md-2 ps-sm-5 pe-sm-5">
+                <h1 style="font-weight: 760;" class="text-dark mt-5  text-uppercase " data-aos="fade-up">
+                  For All Your <br>
+                  Furniture Needs
+                </h1>
+                <p class="pt-3 pb-3" id="break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores
+                  perspiciatis, illo maxime voluptatem a itaque suscipit.</p>
+                <div class="d d-flex align-item-center mb-5">
+                  <button type="button" class="btn-box  btn1  mb-md-5 mb-lg-5 ps-2 pe-2 " data-aos="fade-up"><strong>Contact
+                    us</strong> </button>
+                  <button type="button" class="btn-box  btn2 ms-2  mb-md-5 mb-lg-5  ps-2 pe-2" data-aos="fade-up"><strong> About Us </strong>
+
+                    </button>
+                </div>
+              </div>
+              <div class="col-md-7 ps-md-2 pe-md-2 ps-sm-5 pe-sm-5">
+                <img src="./images/slider-img.png" alt="" class=" w-100  pt-sm-0 pt-md-5 pt-lg-5" data-aos="fade-up">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-light">
+          <div class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-5 ps-md-2 pe-md-2 ps-sm-5 pe-sm-5">
+                <h1 style="font-weight: 760;" class="text-dark mt-5  text-uppercase " data-aos="fade-up">
+                  For All Your <br>
+                  Furniture Needs
+                </h1>
+                <p class="pt-3 pb-3" id="break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores
+                  perspiciatis, illo maxime voluptatem a itaque suscipit.</p>
+                <div class="d d-flex align-item-center mb-5">
+                  <button type="button" class="btn-box  btn1  mb-md-5 mb-lg-5 ps-2 pe-2 " data-aos="fade-up" > <strong>Contact
+                    us</strong> </button>
+                  <button type="button" class="btn-box  btn2 ms-2  mb-md-5 mb-lg-5  ps-2 pe-2" data-aos="fade-up"> <strong> About  Us</strong>
+                    </button>
+                </div>
+              </div>
+              <div class="col-md-7 ps-md-2 pe-md-2 ps-sm-5 pe-sm-5">
+                <img src="./images/slider-img.png" alt="" class=" w-100  pt-sm-0 pt-md-5 pt-lg-5" data-aos="fade-up">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-----------furniture cards section-------------->
+  <div class="container pt-5 px-3">
+
+    <h2 class="fs-2 fw-bold text-uppercase lh-sm " data-aos="fade-up">Our Furniture</h2>
+    <p class="my-1" data-aos="fade-up"  id="break">which don't look even slightly believable. If you are going to use a passage of
+      Lorem Ipsum, you
+      need to be sure there isn't</p>
+  </div>
+
+
+  <div class="container my-5 text-white p-3">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox">
+            <img src="./images/f1.png" class="card-img-top p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;" data-aos="fade-up">
+          </div>
+          <h5 class="text-uppercase" >Brown Chair Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);">$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;" class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox">
+            <img src="./images/f2.png" class="card-img-top p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;"data-aos="fade-up">
+          </div>
+          <h5 class="text-uppercase" >Double Bed Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);">$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;"  class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox">
+            <img src="./images/f3.png" class="card-img-top  p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;" data-aos="fade-up">
+          </div>
+          <h5 class="text-uppercase" >House Chair Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);" >$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;"  class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox">
+            <img src="./images/f4.png" class="card-img-top  p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;">
+          </div>
+          <h5 class="text-uppercase" >Brown table Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);" >$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;"  class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox">
+            <img src="./images/f5.png" class="card-img-top  p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;">
+          </div>
+          <h5 class="text-uppercase" >Blue Chair Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);" >$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;" class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="card cardbg mb-3 p-4  bg-light " style="border: none;" data-aos="fade-up">
+          <div class="imgbox" >
+            <img src="./images/f6.png" class="card-img-top  p-4" alt="..."
+              style="height: 275px; width: 100%; object-fit: contain;">
+          </div>
+          <h5 class="text-uppercase">Brown Chair Design</h5>
+          <div class="d-flex justify-content-between">
+            <h6 class="price_heading">
+              <span style="color:  rgb(107, 183, 190);" >$</span> 100.00
+            </h6>
+            <a href="" style="color:  rgb(107, 183, 190); text-decoration: none;"  class="text-uppercase">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-----------About us section-------------->
+<div class="container-fluid pe-5 ps-5">  <div class="container-fluid mt-5 mb-5 ">
+  <div class="row bg-light p-4">
+    <div class="col-md-6 mt-5 mb-5 d-flex align-item-md-center  " data-aos="fade-up">
+      <img src="./images/about-img.png" alt=""  class="img-fluid " data-aos="fade-up">
+    </div>
+    <div class="col-md-6 mt-md-5 pt-sm-0 mb-5 ">
+      <h1>
+        <strong class="h2 text-uppercase " style="font-weight: 700;" data-aos="fade-up">About Us</strong>
+      </h1>
+      <p class="pt-3 pb-3  text-dark "  id="break" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita <br>
+        ut,
+        quia aut veniam
+        libero veritatis
+        aspernatur nulla cum debitis consequuntur non vitae illum commodi, vel quas. Sed dolorum <br> sit alias!
+      </p>
+
+      <button type="button" class="btn-box  btn2  " > <strong> Read More</strong></button>
+    </div>
+  </div>
+</div></div>
+
+  <!-----------blog section-------------->
+  <div class="container">
+    <div class="row d-flex align-item-center justify-content-center">
+      <h1 class="h2 d-flex align-item-center justify-content-center text-uppercase " style="font-weight: 700;"
+      data-aos="fade-up"> Latest
+        Blog</h1>
+    </div>
+    <div class="row mt-5 d-flex align-item-center justify-content-center">
+      <div class="col-md-6 col-sm-9 pt-3 col-lg-4 ">
+        <div class="card  shadow" data-aos="fade-up">
+          <img src="./images/b1.jpg" alt="" height="100%" width="100%" >
+          <div class="card-body" data-aos="fade-up">
+            <div class="card-title h5" style="font-weight: 700;"  id="break">Look even slightly believable. If
+              you are
+
+            </div>
+            <p data-aos="fade-up"  id="break"> alteration in some form, by injected humour, or randomised words which don't look
+              even slightly
+              believable.</p>
+            <button type="button" class="btn-box  btn2  "> <strong> Read more</strong></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-9 pt-3 col-lg-4 ">
+        <div class="card shadow"data-aos="fade-up">
+          <img src="./images/b2.jpg" alt="" height="100%" width="100%" data-aos="fade-up">
+          <div class="card-body" data-aos="fade-up">
+            <div class="card-title h5" style="font-weight: 700;"  id="break">Anything embarrassing hidden in
+              the middle
+
+            </div>
+            <p   id="break">alteration in some form, by injected humour, or randomised words which don't look
+              even slightly
+              believable.</p>
+            <button type="button" class="btn-box  btn2  "> <strong>Read more</strong> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-9 pt-3 col-lg-4 ">
+        <div class="card shadow" data-aos="fade-up">
+          <img src="./images/b3.jpg" alt="" height="100%" width="100%" >
+          <div class="card-body" data-aos="fade-up">
+            <div class="card-title h5" style="font-weight: 700;"   id="break">Molestias magni natus dolores odio
+              commodi. Quaerat!
+
+            </div>
+            <p   id="break">alteration in some form, by injected humour, or randomised words which don't look
+              even slightly
+              believable.</p>
+            <button type="button" class="btn-box  btn2  "> <strong> Read more</strong></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------testimonial section with carousel-------------->
+
+  <h2 class="text-center py-4 fs-2 fw-bold 1h-sm mt-5">TESTIMONIAL </h2>
+  <div class="container">
+    <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-10 col-lg-9 mx-auto">
+              <div class="container">
+                <div class="row shadow my-5  d-flex px-3 py-4 justify-content-sm-center">
+                  <div class="col-sm-5 col-md-4 col-lg-3 me-0 px-0 py-0  rounded-circle  d-flex justify-content-center " >
+                    <img src="./images/client.jpg" alt="" class="img-fluid rounded-circle h"
+                      style="object-fit: contain; border: 10px solid rgb(107, 183, 190);" id="broken-star2">
+                  </div>
+                  <div class="col-sm-12 col-lg-9 pt-3 ps-4">
+                    <h4><i class="ri-double-quotes-l" class="h4  text-info "></i></h4>
+                    <h3 style="color:  rgb(107, 183, 190);">Sana </h3>
+                    <p  id="break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus temporibus quo
+                      molestiae fuga fugiat commodi, quis officia quisquam, quas voluptates nesciunt sunt dolore rem,
+                      .</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-10 col-lg-9 mx-auto">
+              <div class="container">
+                <div class="row shadow my-5  d-flex px-3 py-4 justify-content-sm-center">
+                  <div class="col-sm-5 col-md-4 col-lg-3 me-0 px-0 py-0  rounded-circle  d-flex justify-content-center " >
+                    <img src="./images/client.jpg" alt="" class="img-fluid rounded-circle"
+                      style="object-fit: contain; border: 10px solid rgb(107, 183, 190);" id="broken-star2">
+
+                  </div>
+                  <div class="col-sm-12 col-lg-9 pt-3 ps-4">
+                    <h4><i class="ri-double-quotes-l" class="h4  text-info "></i></h4>
+                    <h3 style="color:  rgb(107, 183, 190);">Sana</h3>
+                    <p  id="break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus temporibus quo
+                      molestiae fuga fugiat commodi, quis officia quisquam, quas voluptates nesciunt sunt dolore rem,
+                      .</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-10 col-lg-9 mx-auto">
+              <div class="container">
+                <div class="row shadow my-5  d-flex px-3 py-4 justify-content-sm-center">
+                  <div class="col-sm-5 col-md-4 col-lg-3 me-0 px-0 py-0  rounded-circle  d-flex justify-content-center " >
+                    <img src="./images/client.jpg" alt="" class="img-fluid rounded-circle"
+                      style="object-fit: contain; border: 10px solid rgb(107, 183, 190);" id="broken-star2">
+
+                  </div>
+                  <div class="col-sm-12 col-lg-9 pt-3 ps-4">
+                    <h4><i class="ri-double-quotes-l" class="h4  text-info "></i></h4>
+                    <h3 style="color:  rgb(107, 183, 190);">Sana</h3>
+                    <p  id="break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloribus temporibus quo
+                      molestiae fuga fugiat commodi, quis officia quisquam, quas voluptates nesciunt sunt dolore rem,
+                      .</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-----------Contact us section-------------->
+  <div class="container-fluid ps-5 pe-5" >
+    <div class="container-fluid p-md-5 p-sm-3 bg-light h-sm-100 " >
+      <div class="row" id="broken-star">
+        <div class="col-md-12 col-lg-6 mb-3 ">
+          <h1 class="h2 text-uppercase" style="font-weight: 700;" data-aos="fade-up">Contact us</h1>
+          <div class="form" data-aos="fade-up">
+            <input type="text" placeholder=" Your Name" class="form-control pt-3 pb-3 shadow-sm"
+              style="border: none;">
+            <input type="text" placeholder=" Phone No" class="form-control mt-3 mb-3 pt-3 pb-3 shadow-sm"
+           style="border: none; ">
+            <input type="text" placeholder=" Email" class="form-control pt-3 pb-3 shadow-sm"
+              style="border: none;">
+            <input type="text" placeholder=" Message" class="form-control pt-5 pb-5 mb-3 mt-3 shadow-sm"
+           style="border: none;">
+          </div>
+          <button type="button" class="btn-box  btn2 ms-1  " data-aos="fade-up"> <strong>Send</strong> </button>
+
+
+        </div>
+        <div class="col-md-12 col-lg-6  ">
+          <iframe class="w-100 h-100 mb-3 "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.775281722194!2d71.5295182738037!3d29.66829463629776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b0d5e81bfc16f%3A0x6335ebeec830dd35!2sAGS%20Amina%20Girls%20Higher%20Secondary%20school!5e0!3m2!1sen!2s!4v1738283748633!5m2!1sen!2s"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-----------footer section-------------->
+  <div class="container-fluid ps-5 pe-5">
+    <div class="container-fluid bg-dark p-5 ">
+      <div class="row"> 
+        <div class="col-md-6 col-lg-6 col-sm-12 text-light d-flex align-item-center justify-content-center flex-column col-xl-4 mt-4">
+          <span id="sana" class=""  data-aos="fade-up">
+            <h5 class="h4   d-flex align-item-center justify-content-center  "><i class="ri-phone-fill ps-4"></i></h5>
+            <h5 class="pb-4 d-flex align-item-center justify-content-center mb-4">Call:+0030243435334</h5>
+          </span>
+
+          <h3 class="text-light mt-2 d-flex align-item-center justify-content-center gap-3  mb-3 " data-aos="fade-up" >QUICK LINKS</h3>
+        <h6 class="d-flex align-item-center justify-content-center gap-3 ">
+            <a href="" id="sana" data-aos="fade-up" class="d-flex align-item-center justify-content-center">Home</a> 
+            <a href="" id="sana" data-aos="fade-up" class="d-flex align-item-center justify-content-center"> About</a>   
+          </h6>
+          <h6 class="d-flex align-item-center justify-content-center gap-3">
+
+            <a href="" id="sana" data-aos="fade-up" class="d-flex align-item-center justify-content-center">Furniture</a>
+            <a href="" id="sana" data-aos="fade-up" class="d-flex align-item-center justify-content-center">Blog</a> </h6>
+            <h6 class="d-flex align-item-center justify-content-center">
+            <a href="" id="sana" data-aos="fade-up" class="d-flex align-item-center justify-content-center"> Contact us</a></h6>
+         
+
+
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 text-light  d-flex align-item-center justify-content-center flex-column mt-5 col-xl-4">
+          <span id="sana" data-aos="fade-up">
+            <h5 class=" d-flex align-item-center justify-content-center "><i class="ri-mail-star-fill   "></i></h5>
+            <h5  class="d-flex align-item-center justify-content-center">Email:sanasattar@gmail.com</h5>
+          </span>
+
+          <h4 class="text-light mt-5  d-flex align-item-center justify-content-center " data-aos="fade-up">INSTAGRAM FEEDS</h4>
+<span class="d-flex align-item-center justify-content-center">
+          <div class="table  " width="100%" data-aos="fade-up" >
+            <div class="row  mb-1">
+              <div class="tr  d-flex align-item-center justify-content-center gap-2">
+                <td><img src="./images/f1.png" alt="" height="65px" width="65px" ></td>
+                <td><img src="./images/f2.png" alt="" height="65px" width="65px" ></td>
+                <td><img src="./images/f3.png" alt="" height="65px" width="65px" ></td>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="tr mt-1 d-flex align-item-center justify-content-center gap-2 ">
+                <td><img src="./images/f4.png" alt="" height="65px" width="65px" ></td>
+                <td><img src="./images/f5.png" alt="" height="65px" width="65px" ></td>
+                <td><img src="./images/f6.png" alt="" height="65px" width="65px" ></td>
+              </div>
+            </div>
+          </div></span>
+        </div>
+        <div class="col-md-12 col-lg-6 col-sm-12 text-light  d-flex align-item-center justify-content-center flex-column mt-5 col-xl-4 d-flex-sm-center align-item-sm-center justify-content-sm-center  ps-lg-5">
+          <span id="sana" data-aos="fade-up">
+            <h5 class="mt-5 d-flex align-item-center justify-content-center " ><i class="ri-map-pin-user-line  "></i></h5>
+            <h5 class="mt-1 d-flex align-item-center justify-content-center " >Location</h5>
+          </span>
+
+          <h5 class="text-light mt-5 d-flex align-item-center justify-content-center "data-aos="fade-up">
+
+
+
+            SIGN UP TO OUR NEWSLETTER</h5>
+          <input type="text" placeholder="Enter Your Email" class="form-control p-3 " data-aos="fade-up">
+          <button type="button" class="btn-box  btn2 ms-1  mt-4" data-aos="fade-up">
+            <div  class="d-flex align-item-center justify-content-center"> <strong>Suscribes</strong></div>
+          </button>
+          <div class="d-flex align-item-center  gap-3 mt-4 " data-aos="fade-up"> 
+            <span  class="btn3 ">    <span class="p-2 " ><i
+              class="ri-instagram-line h4  "></i></span></span>
+              <span class="btn3 "><span
+             ><i
+                  class="ri-facebook-box-line h4  "></i></span></span>
+                  <span class="btn3"> <span
+                   ><i
+                      class="ri-twitter-line h4 "></i></span></span>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TRADE mark at footer last section -->
+  <section class="container pt-2 pb-4">
+    <div class="row">
+      <div class=" col-12 col-lg-8 text-center text-lg-start h6 col-md-12 col-sm-12">© 2025 Redesign By Sana Sattar  &#128077;
+
+        &#128578;
+
+
+        @Amina girls
+        college . ADP second smester
+        &#x1F423; </div>
+
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>

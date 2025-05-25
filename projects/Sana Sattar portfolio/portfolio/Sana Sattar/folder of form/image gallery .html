@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #244ca0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 5% 40%;
+    }
+    .gallery {
+      margin: 5px;
+      float: left;
+      width: 350px;
+      background-color: aliceblue;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+    .desc {
+      padding: 18px;
+      text-align: center;
+      background-color: white;
+      height: 300px;
+    }
+    .size-value {
+      width: 100%;
+      display: flex;
+      margin-left: 10%;
+    }
+    .size-value span {
+      display: block;
+      height: 33px;
+      width: 13%;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 60%;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #244ca0;
+    }
+    .size-value span.active {
+      background-color: #244ca0;
+      color: white;
+    }
+    .color-value {
+      width: 50%;
+      display: flex;
+      margin: 5% 8%;
+      justify-content: space-between;
+    }
+    .color-value span {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      color: rgb(92, 34, 201);
+      cursor: pointer;
+    }
+    .white {
+      background: lightgrey;
+    }
+    .blue {
+      background: #456ABD;
+    }
+    .yellow {
+      background: #EAA523;
+    }
+    .btn {
+      display: flex;
+      height: 80px;
+      width: 100%;
+      align-items: center;
+    }
+    .btn button {
+      height: 40px;
+      width: 100%;
+      margin: 0px 10px;
+      border: 2px solid #456ABD;
+      background: #456ABD;
+      outline: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gallery">
+    <a target="_blank" href="./images folder/ags.png">
+      <img src="./images/sana.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">
+      <div style="display: inline; padding-right: 10%;font: 1em sans-serif; font-size: 25px;">
+        Adidas Orginals </div>
+      <div style="display: inline; font: 1em sans-serif;font-size: 16px;color: rgb(132, 0, 255);">
+        $29.009 </div>
+
+      <div style="font-size: 20px;font: 1em sans-serif; color: rgb(134, 134, 123); padding-right: 40%;padding-top: 3%;">
+        Men's runnig tshirt</div>
+      <div style="padding-right:80%; font-size: 20px;font: 1em sans-serif;padding-top: 3%;">Size</div>
+      <div class="size-value">
+        <span class="color">XL</span>
+        <span class=" active">S</span>
+        <span class="color">M</span>
+        <span class=" colore"> L</span>
+
+      </div>
+      <div style="color: rgb(0, 0, 0); font:  sans-serif; font-size: larger;padding-right: 72%;">Color</div>
+
+      <div class="color-value">
+        <span class=" blue active" data-color="lightgray"></span>
+        <span class="  white" data-color="#456ABD"></span>
+        <span class="yellow" data-color="#EAA523"></span>
+      </div>
+      <div class="btn">
+        <button> Buy now</button>
+        <button> Add to cart</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

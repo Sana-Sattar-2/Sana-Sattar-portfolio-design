@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootsrap.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/vendors/slick.css">
+    <link rel="stylesheet" href="css/vendors/slick-theme.css"> -->
+    <link rel="stylesheet" href="./vendors/slick-theme.css">
+    <link rel="stylesheet" href="./vendors/slick.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        :root {
+            --bs-orange: orangered;
+        }
+        #bg-orange {
+            background-color: var(--bs-orange);
+        }
+        #hover-effect {
+            background-color: var(--bs-orange);
+            transition: all 1s ease-in-out;
+        }
+        #hover-effect:hover {
+            transform: scale(1.1);
+            background-color: var(--bs-orange);
+        }
+        .colls {
+            /* color: aliceblue;
+            background-color: aquamarine; */
+            transition: all 1s ease-out;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .colls:hover {
+            background-color: var(--bs-orange);
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .nav-link {
+            color: rgb(255, 255, 255);
+            /* transition: all 1s ease-in-out; */
+        }
+        .nav-link:hover {
+            color: var(--bs-orange);
+        }
+        .active1 {
+            color: var(--bs-orange);
+        }
+        #bg {
+            position: fixed;
+            opacity: 1.5;
+            z-index: 6;
+            top: 0;
+        }
+        .span {
+            background-color: var(--bs-orange);
+            transition: all 1s ease-in-out;
+            font-size: 20px;
+        }
+        .span:hover {
+            transform: scaleX(1.1);
+            cursor: pointer;
+        }
+        #sana {
+            opacity: 100;
+            z-index: 100;
+            color: rgb(255, 255, 255);
+            position: absolute;
+        }
+        .card-footer {
+            background-color: var(--bs-orange);
+        }
+        #backgraoundsenuu {
+            width: 100%;
+            height: 70vh;
+            animation: myimg 70s linear infinite;
+        }
+        #backgraound {
+            width: 100%;
+            height: 100%;
+            animation: myimg 70s linear infinite;
+        }
+        @keyframes myimg {
+            0% {
+                background: url(./images/special-bg.png);
+                /* transform: translateX(300px); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            20% {
+                background: url(./images/bg-book-a-table.jpg);
+                /* transform: translateX(300px); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            40% {
+                background: url(./images/special-bg.png);
+                /* transform: translateX(300px); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            60% {
+                background: url(./images/bg-book-a-table.jpg);
+                /* transform: translateX(300px); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            80% {
+                background: url(./images/special-bg.png);
+                /* transform: translateX(300px); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background: url(./images/bg-book-a-table.jpg);
+                /* transform: translateX(300px); */
+                background-position: center;
+                /* opacity: 0.7; */
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .bgimg {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .bgimg1 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-03.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+
+        .bgimg1:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .bgimg2 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg2:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .bgimg3 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-05.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+
+        .bgimg3:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .bgimg8 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-11.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+
+        .bgimg8:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .bgimg4 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-12.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg4:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .bgimg5 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-08.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg5:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .bgimg6 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-09.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg6:hover {
+                  transform: scale(1.1);
+            cursor: pointer;
+        }
+        .bgimg7 {
+            height: 100%;
+            width: 100%;
+            background-image: url(./images/menu-10.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all 1s ease-in-out;
+        }
+        .bgimg7:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .opacity {
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            padding-top: 20px;
+        }
+        .opacity:hover {
+            opacity: 0.7;
+            background-color: black;
+            z-index: 3;
+            cursor: crosshair;
+            height: 100%;
+            width: 100%;
+        }
+        #backgraoundsenuu {
+            background-color: black;
+            color: aliceblue;
+        }
+        #backgraound1 {
+            background-color: black;
+            opacity: 0.7;
+            /* height: 100vh; */
+            width: 100%;
+        }
+        #chef1 {
+            background: url(./images/chef-3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef1:hover {
+            transform: scale(1.1);
+        }
+        #chef2:hover {
+            transform: scale(1.1);
+        }
+        #chef3:hover {
+            transform: scale(1.1);
+        }
+        #chef4:hover {
+            transform: scale(1.1);
+        }        #chef5:hover {
+            transform: scale(1.1);
+        }
+        #chef6:hover {
+            transform: scale(1.1);
+        }
+        #chef7:hover {
+            transform: scale(1.1);
+        }
+        #chef8:hover {
+            transform: scale(1.1);
+        }
+        #chef2 {
+            background: url(./images/chef-4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef3 {
+            background: url(.);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef4 {
+            background: url(./images/chef-5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef5 {
+            background: url(./images/chef-6.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef6 {
+            background: url(./images/chef-7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef8 {
+            background: url(./images/chef-8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        #chef7 {
+            background: url(./images/chef-7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in-out;
+        }
+        .container-fluide {
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+        .container-fluide:hover {
+            opacity: 0.7;
+            cursor: crosshair;
+        }
+        .input>input[type="text"] {
+            height: 50px;
+            width: 60%;
+            border: 1px solid white;
+            background-color: black;
+            font-size: 20px;
+            padding-left: 100px;
+            color: antiquewhite;
+        }
+        .suscribe {
+            background-color: orangered;
+            color: aliceblue;
+            font-size: 16px;
+            padding: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light text-light col-sm col-md" data-bs-theme="dark">
+        <div class="container-fluid text-light bg-dark" style="position: fixed; top: 0; z-index: 2; opacity: 8;">
+            <a class="navbar-brand p-4 ps-5 ms-5 " href="#"><img src="./images/cf-logo.png" alt="" height="70%"
+                    width="70%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  d-flex align-item-center justify-content-center ps-5"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5 gap-5 ">
+                    <li class="nav-item ps-5">
+                        <a class="nav-link active1 ps-5" aria-current="page" href="#"><strong>HOME</strong> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <strong>ABOUT US</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            <strong>MENU</strong>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> <strong>OUR CHEFS</strong></a></li>
+                            <li><a class="dropdown-item" href="#"> <strong></strong>Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> <strong></strong>Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "> <strong></strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "> <strong>CONTACT US</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "> <strong>404 PAGES</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" id="hover-effect" id="bg-orange  ">
+                            <strong>BOOK-A-TABLE</strong></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"  >
+                <img src="./images/slide-03.jpg" class="d-block w-100" alt="..."   >
+                <div
+                    class="carousel-caption d-flex flex-column justify-content-center align-item-center  h-100 bottom-0  bottom-0 ">
+                    <div class="container-fluid mt-4 "  id="saniiii">
+                        <div class="row">
+                            <div class="col-md-6 d-flex  justify-content-center align-item-center mt-5 "
+                                style="margin-left: -100px;">
+
+
+
+                                <div class="container  " id="welcomepart">
+                                    <div class="row">
+                                        <div class="col-md-12 ">
+                                            <div class="brdr d-flex">
+                                                <span class="card-title d-flex"
+                                                    style="font-weight: bold;   font-family: Edwardian Script ITC; font-size: 60px; color: orangered;">Welcome
+                                                    to
+                                                </span>
+                                                <span class="d-flex "
+                                                    style="border-bottom: 2px solid rgb(250, 86, 26); width: 200px; height: 60px;"></span>
+
+                                            </div>
+
+                                            <h1 class="card-title" style="font-weight: bold;font-size: 60px;">Choosy
+                                                Foody</h1>
+                                            <p class=" col-sm-12 col-md-12 col-lg-12 " style="padding-left: 30px;">
+                                            <p style="padding-left: 30px;">ChoosyFoody does the business where
+                                                customers have the access as
+                                                far-from-home everyday food needs like on a one-stop-shop. <br> <br>
+
+                                            </p>
+                                            </p> <span class="span p-2 " style="margin-right: 180px;">
+                                                Discover-our-story</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+
+
+                                <div class="col-md-10 ms-5">
+                                    <div class="card1 bg-dark p-3" style="margin-left: 280px; margin-right: -280px;"  id="cardsss">
+
+                                        <div class="container ">
+                                            <div class="row "
+                                                style="color: orangered; font-family: Edwardian Script ITC;">
+                                                <!-- <div class="col-md-1 ">
+                               
+                                        </div> -->
+                                                <div class="col-sm-4  mt-4">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-sm-4 mt-2 ">
+                                                    <h1> Our</h1>
+
+                                                </div>
+                                                <div class="col-sm-4 mt-4 ">
+                                                    <hr>
+                                                </div>
+                                                <!-- <div class="col-md-1 ">
+                            
+                                        </div> -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                                <div class="col-sm-8 text-light">
+                                                    <h4>Chef's Choices</h4>
+
+                                                </div>
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2 "></div>
+                                                <div class="col-xm-7">
+                                                    <img src="./images/title-shape.svg" alt="" height="60%" width="60%">
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-01.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Broasted Chicken</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-02.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Athens Chicken Breast
+                                                    </h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$25.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-03.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Steak-Shrimp Combo</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-04.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        North Atlantic Haddock</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$40.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-05.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Ribeye Steak</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide-02.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="carousel-caption gap-5 d-flex flex-column justify-content-center align-item-center   h-100 bottom-0  ">
+                    <div class="container-fluidcontainer-fluid mt-4 ">
+                        <div class="row">
+                            <div class="col-md-6 d-flex  justify-content-center align-item-center mt-5 "
+                                style="margin-left: -100px;">
+
+
+
+                                <div class="container  ">
+                                    <div class="row">
+                                        <div class="col-md-12 ">
+                                            <div class="brdr d-flex">
+                                                <span class="card-title d-flex"
+                                                    style="font-weight: bold;   font-family: Edwardian Script ITC; font-size: 60px; color: orangered;">Welcome
+                                                    to
+                                                </span>
+                                                <span class="d-flex "
+                                                    style="border-bottom: 2px solid rgb(250, 86, 26); width: 200px; height: 60px;"></span>
+
+                                            </div>
+
+                                            <h1 class="card-title" style="font-weight: bold;font-size: 60px;">Choosy
+                                                Foody</h1>
+                                            <p class=" col-sm-12 col-md-12 col-lg-12 " style="padding-left: 30px;">
+                                            <p style="padding-left: 30px;">ChoosyFoody does the business where
+                                                customers have the access as
+                                                far-from-home everyday food needs like on a one-stop-shop. <br> <br>
+
+                                            </p>
+                                            </p> <span class="span p-2 " style="margin-right: 180px;">
+                                                Discover-our-story</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+
+
+                                <div class="col-md-10 ms-5">
+                                    <div class="card1 bg-dark p-3" style="margin-left: 280px; margin-right: -280px;">
+
+                                        <div class="container ">
+                                            <div class="row "
+                                                style="color: orangered; font-family: Edwardian Script ITC;">
+                                                <!-- <div class="col-md-1 ">
+                               
+                                        </div> -->
+                                                <div class="col-sm-4  mt-4">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-sm-4 mt-2 ">
+                                                    <h1> Our</h1>
+
+                                                </div>
+                                                <div class="col-sm-4 mt-4 ">
+                                                    <hr>
+                                                </div>
+                                                <!-- <div class="col-md-1 ">
+                            
+                                        </div> -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                                <div class="col-sm-8 text-light">
+                                                    <h4>Chef's Choices</h4>
+
+                                                </div>
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2 "></div>
+                                                <div class="col-xm-7">
+                                                    <img src="./images/title-shape.svg" alt="" height="60%" width="60%">
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-01.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Broasted Chicken</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-02.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Athens Chicken Breast
+                                                    </h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$25.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-03.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Steak-Shrimp Combo</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-04.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        North Atlantic Haddock</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$40.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-05.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Ribeye Steak</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/slide-01.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="carousel-caption  d-flex flex-column justify-content-center align-item-center  h-100 bottom-0 bottom-0 ">
+                    <div class="container-fluid mt-4 ">
+                        <div class="row">
+                            <div class="col-md-6 d-flex  justify-content-center align-item-center mt-5 "
+                                style="margin-left: -100px;">
+
+
+
+                                <div class="container  ">
+                                    <div class="row">
+                                        <div class="col-md-12 ">
+                                            <div class="brdr d-flex">
+                                                <span class="card-title d-flex"
+                                                    style="font-weight: bold;   font-family: Edwardian Script ITC; font-size: 60px; color: orangered;">Welcome
+                                                    to
+                                                </span>
+                                                <span class="d-flex "
+                                                    style="border-bottom: 2px solid rgb(250, 86, 26); width: 200px; height: 60px;"></span>
+
+                                            </div>
+
+                                            <h1 class="card-title" style="font-weight: bold;font-size: 60px;">Choosy
+                                                Foody</h1>
+                                            <p class=" col-sm-12 col-md-12 col-lg-12 " style="padding-left: 30px;">
+                                            <p style="padding-left: 30px;">ChoosyFoody does the business where
+                                                customers have the access as
+                                                far-from-home everyday food needs like on a one-stop-shop. <br> <br>
+
+                                            </p>
+                                            </p> <span class="span p-2 " style="margin-right: 180px;">
+                                                Discover-our-story</span>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+
+
+
+                                <div class="col-md-10 ms-5">
+                                    <div class="card1 bg-dark p-3" style="margin-left: 280px; margin-right: -280px;">
+
+                                        <div class="container ">
+                                            <div class="row "
+                                                style="color: orangered; font-family: Edwardian Script ITC;">
+                                                <!-- <div class="col-md-1 ">
+                               
+                                        </div> -->
+                                                <div class="col-sm-4  mt-4">
+                                                    <hr>
+                                                </div>
+                                                <div class="col-sm-4 mt-2 ">
+                                                    <h1> Our</h1>
+
+                                                </div>
+                                                <div class="col-sm-4 mt-4 ">
+                                                    <hr>
+                                                </div>
+                                                <!-- <div class="col-md-1 ">
+                            
+                                        </div> -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                                <div class="col-sm-8 text-light">
+                                                    <h4>Chef's Choices</h4>
+
+                                                </div>
+                                                <div class="col-sm-2">
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-2 "></div>
+                                                <div class="col-xm-7">
+                                                    <img src="./images/title-shape.svg" alt="" height="60%" width="60%">
+                                                </div>
+                                                <div class="col-sm-2"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-01.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Broasted Chicken</h6>
+                                                    <span class=" d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-02.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Athens Chicken Breast
+                                                    </h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$25.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-03.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Steak-Shrimp Combo</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-04.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        North Atlantic Haddock</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$40.00</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img src="./images/menu-05.jpg" alt="" width="90%"
+                                                        class="rounded-pill">
+                                                </div>
+                                                <div class="col-sm-9 ">
+                                                    <h6
+                                                        class="text-light d-flex align-item-start justify-content-start">
+                                                        Ribeye Steak</h6>
+                                                    <span class="d-flex align-item-start justify-content-start"
+                                                        style="color: orangered;">$15.00</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid ">
+        <div class="row mt-5 ">
+            <div class="col-md-5 ">
+                <img src="./images/about-us.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-md-1 ">
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="container">
+                    <div class="row" style="color: orangered; font-family: Edwardian Script ITC; font-size: 50px;">
+                        <div class="col-md-5"> What we are</div>
+                        <div class="col-md-7 mt-4">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row" style="color: rgb(131, 124, 124);">
+                        <h1>Choosy Foody</h1>
+                        <span><img src="./images/title-shape.svg" alt="" class="me-5" height="40%" width="40%"
+                                style="margin-left: -70px;"></span>
+                        <span class="h5  text-uppercase " style="color: gray;"> “We are open for breakfast, lunch
+                            and dinner”</span>
+
+                        <p class="p-3 " style="color: grey; font-size: 18px;"> ChoosyFoody does the business where
+                            customers have the access as far-from-home everyday food needs like on a one-stop-shop. Our
+                            commitment is to collect fresh, locally produced, organic vegetables and natural seafood to
+                            make tasty dishes that you’ll not find anywhere. All of our products with the highest
+                            quality and value, healthy, nutritious. We give outstanding personal services at the lowest
+                            possible prices. Our remarkable raw bar offers a variety of Jumbo Lobsters, Natural Oysters,
+                            Crispy Cherrystones and Littleneck Clams. Environment here is clean, fun and friendly, so
+                            you, your friends and family feel very comfortable here. We promise to make ChoosyFoody the
+                            best place to not only for food, but also to get pleasure and as well as the best place to
+                            work for the employees.</p>
+                        <h4 class="text-uppercase" style="color: rgb(107, 97, 97);"> <strong>Our Phone No.</strong>
+
+                        </h4>
+                        <h4 style="color: rgb(235, 109, 63);"> <strong>+1-123-456-7890</strong></h4>
+                        <h4 class="text-uppercase" style="color: rgb(107, 97, 97);"> <strong>Opening Days</strong>
+
+                        </h4>
+                        <h4 style="color: rgb(235, 109, 63);" class="text-uppercase"> <strong>Monday to
+                                Saterday</strong></h4>
+                        <h4 class="text-uppercase" style="color: rgb(107, 97, 97);"> <strong>Opening Hours</strong>
+
+                        </h4>
+                        <h4 style="color: rgb(235, 109, 63);" class="text-uppercase"> <strong>7am to 11pm</strong></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid " id="backgraound">
+        <div class="container-fluid " id="backgraound1">
+
+            <div class="row pt-5" style="color: orangered;font-family: Edwardian Script ITC; ">
+                <div class="col-sm-4 col-md-2"></div>
+                <div class="col-sm-4 col-md-2 pt-4">
+                    <hr>
+                </div>
+                <div class="col-sm-4 col-md-4 h1  d-flex align-item-center justify-content-center">Today's Special</div>
+                <div class="col-sm-4 col-md-2 pt-4">
+                    <hr>
+                </div>
+                <div class="col-sm-4 col-md-2"> </div>
+            </div>
+            <div class="row  d-flex align-item-center justify-content-center">
+                <h1 class="text-light d-flex align-item-center justify-content-center">Oven Grilled Lamb</h1>
+            </div>
+            <!-- <div class="row"> -->
+            <h6 class=" d-flex align-item-center justify-content-center"> <img src="./images/title-shape.svg" alt=""
+                    height="10%" width="10%">
+            </h6>
+            <!-- 
+            </div> -->
+            <!-- <div class="row"> -->
+            <h4 class=" d-flex align-item-center justify-content-center text-light"> Our finger licking tasty dish
+                Oven Grilled Lamb with salad and sauce</h4>
+
+            <!-- </div> -->
+            <div class="row pb-5">
+                <h2 class=" d-flex align-item-center justify-content-center" style="color: rgb(253, 68, 0);"> $35.00
+                </h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-1">
+            <div class="col-md-2  col-sm-1 pt-1 bg-dark">
+                <h6 class="text-uppercase text-light d-flex align-item-center justify-content-center pt-5 ">ChoosyFoody
+                </h6>
+                <h6><strong class=" text-light  d-flex align-item-center justify-content-center pt-3">
+
+
+                        <span data-bs-target="#myModal" data-bs-toggle="modal"> MENU </span>
+                        <div class="modal p-5 fade" id="myModal" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title text-dark p-1 text-uppercase">Our different Menus</h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body text-dark ps-2 h6 ">
+
+
+                                        <p class="text-dark h6"> These our different menus present here .You can select
+                                            your menu with your own choic. Without these differnt menu others foods are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;">But in the menu these foods are present
+                                            here
+
+                                            <li>Athens Chkn Braest
+                                                <span class="badge bg-danger">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li>Broasted Chiken
+                                                <span class="badge bg-primary">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li>Fried Mushroom
+                                                <span class="badge bg-info">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li>Rabeye Steak
+                                                <span class="badge bg-success">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+
+
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"> Thanks for
+                                            visit our menu</button>
+                                        <button type="button" class=" btn  btn-success" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </strong></h6>
+                <h6 class="text-light   d-flex align-item-center justify-content-center pt-3"> <span class="colls">
+
+                        <span data-bs-target="#myModal7" data-bs-toggle="modal">ALL DISHES </span>
+                        <div class="modal p-5 fade" id="myModal7" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title text-dark p-1 text-uppercase">Our different dishes </h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body text-dark ps-2 h6 ">
+
+
+                                        <p class="text-dark h6"> These our different dishes present here .You can select
+                                            your dishes with your own choic. Without these differnt dishes others foods
+                                            are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;">But in the dishes these foods are present
+                                            here
+
+                                            <li>Athens Chkn Braest
+                                                <span class="badge bg-danger">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li>Broasted Chiken
+                                                <span class="badge bg-primary">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li>Fried Mushroom
+                                                <span class="badge bg-info">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li>Rabeye Steak
+                                                <span class="badge bg-success">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+
+
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"> Thanks for
+                                            visiting our dishes list</button>
+                                        <button type="button" class=" btn  btn-success" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </span></h6>
+                <h6 class="text-light  d-flex align-item-center justify-content-center pt-3"> <span class="colls">
+                        <span data-bs-target="#myModal6" data-bs-toggle="modal"> BEAKFAST </span>
+                        <div class="modal p-5 fade " id="myModal6" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable  modal-dialog-md ">
+                                <div class="modal-content bg-warning">
+                                    <div class="modal-header bg-primary " style="border: none;">
+                                        <h3 class="modal-title text-dark p-1 text-uppercase text-white ">Our information
+                                        </h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body ps-2 h6 ">
+
+
+
+                                        <h3 class="text-dark">Our breakfast list</h3>
+                                        <p class=" h6 text-light"></p>
+                                        These our different breakfast present here .You can select
+                                        your breakfast with your own choic. Without these differnt breakfast others
+                                        foods are
+                                        also present here, you can also enjoy with them
+                                        <ul class="text-dark" style="list-style-type: decimal;">But in the breakfast
+                                            these foods are present
+                                            here
+
+                                            <li class="text-light mt-2">Athens Chkn Braest
+                                                <span class="badge bg-danger">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li class="text-light mt-2">Broasted Chiken
+                                                <span class="badge bg-primary ms-4">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li class="text-light mt-2">Fried Mushroom
+                                                <span class="badge bg-light text-info ms-4">100% <span
+                                                        class="badge bg-info text-dark">more</span></span>
+                                            </li>
+                                            <li class="text-light mt-2">Rabeye Steak
+                                                <span class="badge bg-success ms-5">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="container-fluid">
+                                            <h3 class="text-dark">Our Different Chefs</h3>
+                                            <p class="text-light"> Our different chefs are skillfull. They cook each and
+                                                every food.But many chefs in our group gained popularity in cooking food
+                                                in short period of time.</p>
+
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-6 d-flex align-item-center justify-content-center">
+                                                    <img src="./images/client-1.jpg" alt="" height="100%" width="100%"
+                                                        class="img-thumbnail">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="text-dark">Sana Sattar</h4>
+                                                    <p class="text-light">I am Sana Sattar. I am not a chef.I am a
+                                                        student of <span class="h5 text-dark">
+                                                            <abbr
+                                                                title=" ADP stand for Associated Degree Program. This  degree started in few years. But it don't gained any popularity in my point of view .because it look like s borring degree.">ADP</abbr>
+
+                                                        </span>. I am interested in programming, am want to make
+                                                        a good future because I don't know what's happening in
+                                                        future.That's whay still be continue for making good future.</p>
+
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="text-dark"> My progress</h4>
+                                        <div class="progress bg-dark" style="height: 30px;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                style="height: 30px; width: 90%;">
+                                                90%
+                                            </div>
+                                        </div>
+                                        <h5
+                                            class="spinner-border text-light mt-2 ms-5 d-flex align-item-center justify-content-center">
+                                        </h5>
+                                    </div>
+                                    <div class="modal-footer bg-primary" style="border: none;">
+
+
+                                        <button type="button" class="btn btn-light" data-bs-toggle="modal"> Thanks for
+                                            read our information</button>
+                                        <button type="button" class=" btn  btn-light" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </span></h6>
+                <h6 class="text-light  d-flex align-item-center justify-content-center pt-3"> <span class="colls"> <span
+                            data-bs-target="#myModal4" data-bs-toggle="modal"> LUNCH </span>
+                        <div class="modal p-5 fade" id="myModal4" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-info" style="border: none;">
+                                        <h3 class="modal-title text-light p-1 text-uppercase">Our different lunch</h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body text-dark ps-2 h6 ">
+
+
+                                        <p class="text-dark h6"> These our different lunch present here .You can select
+                                            your lunch with your own choic. Without these differnt lunch others foods
+                                            are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;">But in the lunch these foods are present
+                                            here
+
+                                            <li>Athens Chkn Braest
+                                                <span class="badge bg-danger">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li>Broasted Chiken
+                                                <span class="badge bg-primary ms-4 mt-2">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li>Fried Mushroom
+                                                <span class="badge bg-info ms-4 mt-2">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li>Rabeye Steak
+                                                <span class="badge bg-success ms-5 mt-2">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer bg-info" style="border: none;">
+
+
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"> Thanks for
+                                            visiting our lunch list</button>
+                                        <button type="button" class=" btn  btn-danger" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </span></h6>
+                <h6 class="text-light  d-flex align-item-center justify-content-center pt-3"> <span class="colls"> <span
+                            data-bs-target="#myModal1" data-bs-toggle="modal"> DINNER </span>
+                        <div class="modal p-5 fade" id="myModal1" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-success" style="border: none;">
+                                        <h3 class="modal-title text-light p-1 text-uppercase">Our different dinner</h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body text-dark ps-2 h6 bg-light">
+
+
+                                        <p class="text-dark h6"> These our different dinner present here .You can select
+                                            your dinner with your own choice. Without these differnt dinner, others
+                                            foods are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;" class="text-danger">But in the dinner, these foods are present
+                                            here
+
+                                            <li class="text-dark">Athens Chkn Braest
+                                                <span class="badge bg-danger mt-2 ">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li class="text-dark">Broasted Chiken
+                                                <span class="badge bg-primary mt-2 ms-4">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li class="text-dark">Fried Mushroom
+                                                <span class="badge bg-info mt-2 ms-4">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li class="text-dark">Rabeye Steak
+                                                <span class="badge bg-success mt-2 ms-5">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer bg-success" style="border: none;">
+
+
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"> Thanks for
+                                            visiting our dinner list</button>
+                                        <button type="button" class=" btn  btn-danger" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </span></h6>
+                <h6 class="text-light  d-flex align-item-center justify-content-center pt-3"> <span class="colls"> <span
+                            data-bs-target="#myModal2" data-bs-toggle="modal"> DRINKS </span>
+                        <div class="modal p-5 fade" id="myModal2" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary" style="border: none;">
+                                        <h3 class="modal-title text-light p-1 text-uppercase ">Our different drinks</h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body  ps-2 h6 bg-success ">
+
+
+                                        <p class=" h6"> These our different drinks present here .You can select
+                                            your drinks with your own choic. Without these differnt drinks others foods
+                                            are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;">But in the drinks these foods are present
+                                            here
+
+                                            <li>Athens Chkn Braest
+                                                <span class="badge bg-danger ">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li>Broasted Chiken
+                                                <span class="badge bg-info ms-4 mt-2">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li>Fried Mushroom
+                                                <span class="badge bg-warning ms-4 mt-2">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li>Rabeye Steak
+                                                <span class="badge bg-info ms-5 mt-2">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer bg-primary" style="border: none;">
+
+
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"> Thanks for
+                                            visiting our dinner list</button>
+                                        <button type="button" class=" btn  btn-danger" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </span></h6>
+                <h6 class="text-light  d-flex align-item-center justify-content-center pt-3"> <span class="colls"> <span
+                            data-bs-target="#myModal3" data-bs-toggle="modal">SNAK </span>
+                        <div class="modal p-5 fade" id="myModal3" data-bs-backdrop="static">
+
+                            <div class=" modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning" style="border: none;">
+                                        <h3 class="modal-title text-light p-1 text-uppercase">Our different snak</h3>
+                                        <button class="btn-close" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"></button>
+
+
+                                    </div>
+                                    <div class="modal-body text-dark ps-2 h6 bg-light">
+
+
+                                        <p class="text-dark h6"> These our different snaks present here .You can select
+                                            your snak with your own choic. Without these differnt snaks others foods are
+                                            also present here, you can also enjoy with them
+                                        <ul style="list-style-type: decimal;">But in the snak these foods are present
+                                            here
+
+                                            <li>Athens Chkn Braest
+                                                <span class="badge bg-danger">60%
+                                                    <span class="badge bg-light text-dark">less</span>
+                                                </span>
+                                            </li>
+                                            <li>Broasted Chiken
+                                                <span class="badge bg-primary ms-4 mt-2">90%
+                                                    <span class="badge bg-light text-dark">more</span>
+                                                </span>
+                                            </li>
+                                            <li>Fried Mushroom
+                                                <span class="badge bg-info ms-4 mt-2">100% <span
+                                                        class="badge bg-light text-dark">more</span></span>
+                                            </li>
+                                            <li>Rabeye Steak
+                                                <span class="badge bg-success ms-5 mt-2">87% <span
+                                                        class="badge  bg-light text-dark">more</span></span>
+                                            </li>
+
+                                        </ul>
+
+                                        </p>
+
+                                        <div class="container-fluid">
+
+
+                                            <div class="row">
+                                                
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-01.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-02.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-03.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-04.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-05.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-06.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                                <div class="col-md-3 p-1">
+                                                    <img src="./images/menu-07.jpg" alt="" height="100%" width="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer bg-warning" style="border: none;">
+
+
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"> Thanks for
+                                            visiting our snaks list</button>
+                                        <button type="button" class=" btn  btn-danger" data-bs-toggle="modal"
+                                            data-bs-dismiss="modal"> Close</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </span></h6>
+            </div>
+            <div class="col-md-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Broasted
+                                            Chiken</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$15.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg1  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Athens
+                                            Chkn Braest</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$35.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg2  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center"> Sweats
+                                            Food</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$15.80</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <img src="./images folder/menu-04.jpg" alt="" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg3  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">
+                                            Steak-Shrimp </h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$40.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg4  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Fried
+                                            Mushroom</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$18.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <img src="./images folder/menu-06.jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg5  d-flex align-item-center justify-content-center flex-column">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Broasted
+                                            Chiken</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$12.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 p-1">
+                            <img src="./images folder/menu-07.jpg" alt="" height="100%" width="100%">
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg6  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Rabeye
+                                            Steak</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$15.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg7  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center"> Chkn Lo
+                                            Calplate</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$44.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1">
+                            <div class="bgimg8  d-flex align-item-center justify-content-center">
+                                <div class="opacity h1 text-info">
+                                    <span
+                                        class="opac0 d-flex align-item-center justify-content-center h-100 flex-column">
+                                        <h4 class="text-light d-flex align-item-center justify-content-center">Broasted
+                                            Chiken</h4>
+
+                                        <h5 style="color: rgb(255, 68, 0);"
+                                            class="d-flex align-item-center justify-content-center">$15.90</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images folder/bs.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-flex align-item-center justify-content-center flex-column h-100">
+                    <div class="container-fluid">
+                        <div class="col testimonial-title text-center">
+
+                            <div class="content">
+
+                                <h1 style="font-family: Edwardian Script ITC;color: orangered;">Clients</h1>
+
+                                <h1 style="color: rgb(114, 104, 104);">Testimonials</h1>
+
+                                <img src="images/title-shape.svg" alt="Title Shape Image" class=" mb-3" height=""
+                                    width="10%">
+
+                            </div>
+
+                        </div>
+                        <div><img src="./images/client-1.jpg" alt="" height="50%" class="rounded-pill">
+                        </div>
+                        <div style="color: orangered; " class="h5"><i class="ri-star-fill"></i> <i
+                                class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(114, 104, 104);" class="h5"> "I" had such a wonderful evening
+                                yesterday, on my Birthday. The
+                                food
+                                was, as per usual, absolutely delicious and my Mother and I thoroughly enjoyed
+                                ourselves"</p>
+                        </div>
+                        <div class="quatation">
+                            <img src="./images/left-quote-color.png" alt="" width="3%" height="3%">
+                        </div>
+                        <div class="signature">
+                            <img src="./images folder/signature-1.png" alt="" height="10%" width="10%">
+                        </div>
+                        <div class="name" style="color: rgb(114, 104, 104);"><strong>Sana Sattar</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images folder/bs.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex align-item-center justify-content-center flex-column h-100">
+                    <div class="container-fluid">
+                        <div class="col testimonial-title text-center">
+
+                            <div class="content">
+
+                                <h1 style="font-family: Edwardian Script ITC; color: orangered;">Clients</h1>
+
+                                <h1 style="color: rgb(114, 104, 104);">Testimonials</h1>
+
+                                <img src="images/title-shape.svg" alt="Title Shape Image" class=" mb-3" height=""
+                                    width="10%">
+
+                            </div>
+
+                        </div>
+                        <div><img src="./images/client-2.jpg" alt="" height="50%" class="rounded-pill">
+                        </div>
+                        <div style="color: orangered; " class="h5"><i class="ri-star-fill"></i> <i
+                                class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(114, 104, 104);" class="h5"> "I" had such a wonderful evening
+                                yesterday, on my Birthday. The
+                                food
+                                was, as per usual, absolutely delicious and my Mother and I thoroughly enjoyed
+                                ourselves"</p>
+                        </div>
+                        <div class="quatation">
+                            <img src="./images/left-quote-color.png" alt="" width="3%" height="3%">
+                        </div>
+                        <div class="signature">
+                            <img src="./images folder/signature-2.png" alt="" height="10%" width="10%">
+                        </div>
+                        <div class="name" style="color: rgb(114, 104, 104);"><strong>Fraz</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images folder/bs.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-flex align-item-center justify-content-center flex-column h-100">
+                    <div class="container-fluid">
+                        <div class="col testimonial-title text-center">
+
+                            <div class="content">
+
+                                <h1 style="font-family: Edwardian Script ITC;color: orangered;">Clients</h1>
+
+                                <h1 style="color: rgb(114, 104, 104);">Testimonials</h1>
+
+                                <img src="images/title-shape.svg" alt="Title Shape Image" class=" mb-3" height=""
+                                    width="10%">
+
+                            </div>
+
+                        </div>
+                        <div><img src="./images/client-3.jpg" alt="" height="50%" class="rounded-pill">
+                        </div>
+                        <div style="color: orangered; " class="h5"><i class="ri-star-fill"></i> <i
+                                class="ri-star-fill"></i> <i class="ri-star-fill"></i> <i class="ri-star-fill"></i>
+                        </div>
+                        <div>
+                            <p style="color: rgb(114, 104, 104);" class="h5"> "I" had such a wonderful evening
+                                yesterday, on my Birthday. The
+                                food
+                                was, as per usual, absolutely delicious and my Mother and I thoroughly enjoyed
+                                ourselves"</p>
+                        </div>
+                        <div class="quatation">
+                            <img src="./images/left-quote-color.png" alt="" width="3%" height="3%">
+                        </div>
+                        <div class="signature">
+                            <img src="./images folder/signature-3.png" alt="" height="10%" width="10%">
+                        </div>
+                        <div class="name" style="color: rgb(114, 104, 104);"><strong>Farhaan</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <div class="container-fluid  text-light">
+        <div id="backgraoundsenuu">
+            <div class="row  d-flex align-item-center justify-content-center">
+
+
+                <div class="col-md-1"></div>
+                <div class="col-md-5  d-flex align-item-center justify-content-center flex-column ">
+
+                    <div class="bookATable   d-flex align-item-center justify-content-center"
+                        style="color: orangered;font-family: Edwardian Script ITC; margin-top: 100px;">
+                        <h1> <b>Book a Table</b></h1>
+                    </div>
+                    <div class="come d-flex align-item-center justify-content-center">
+                        <h1 style="font-size: 60px;">Come and Enjoy</h1>
+                    </div>
+                    <div class="design d-flex align-item-center justify-content-center">
+                        <img src="./images/title-shape.svg" alt="" height="50%" width="50%">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 mt-5">
+                    <div class="form bg-light p-3">
+                        <div class="text-uppercase h4 d-flex align-item-center justify-content-center"
+                            style="color: orangered;"> yours requirements</div>
+                        <input type="text" class="form-control mb-2 " placeholder="No of Person" required>
+                        <input type="text" class="form-control  mb-2" placeholder="Dates" required>
+                        <input type="text" class="form-control mb-2 " placeholder="Time" required>
+                        <input type="text" class="form-control mb-2 " placeholder="Your Name" required>
+                        <input type="number" class="form-control mb-2 " placeholder="Your Phone No" required>
+                        <input type="email" class="form-control  mb-2" placeholder="Your Email" required>
+                        <button type="button" type="button" class="form-control text-light "
+                            style="background-color: orangered;  ">Submit
+                        </button>
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 mt-3" style="color: rgb(255, 68, 0);">
+                <hr>
+            </div>
+            <div class="col-md-4 h2 d-flex align-item-center justify-content-center"> <strong
+                    style="color: orangered;font-family: Lucida Handwriting;">Meet-our-People</strong></div>
+            <div class="col-md-2 mt-3" style="color: rgb(255, 68, 0);">
+                <hr>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md- 12 h1 d-flex align-item-center justify-content-center">
+                Our Awesome Chefs
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md- 12 h1 d-flex align-item-center justify-content-center">
+                <img src="./images/title-shape.svg" alt="" height="30%" width="30%">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid pe-5 pb-5 ps-5">
+        <div class="row">
+            <div div class="col-md-3 pe-4 pb-2">
+                <div id="chef1">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Rover
+                            Denson</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Executive Chef</h3>
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pb-2 ">
+                <div id="chef2">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Sana Sattar</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Sous Chef</h3>
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-2 ">
+                <div class="container-fluid" id="chef3">
+                    <img src="./images/chef-1.jpg" alt="" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="col-md-3 p-2 ">
+                <div id="chef8">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Frhan Ahmad</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Buture Chef</h3>
+
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="row">
+            <div div class="col-md-3 pt-4 pe-4">
+                <div id="chef4">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Frazz Ahamd</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Fish Chef</h3>
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pt-4">
+                <div id="chef5">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Amaaar Shehbaz</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Fry Chef</h3>
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 pt-4">
+                <div class="container-fluid" id="chef3">
+                    <img src="./images/chef-2.jpg" alt="" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="col-md-3 pt-4">
+                <div id="chef6">
+                    <div class="container-fluide">
+
+                        <div class="h2  d-flex align-item-center justify-content-center " style="color: orangered;">
+                            Rover
+                            Denson</div>
+                        <h3 class="text-light d-flex align-item-center justify-content-center ">Executive Chef</h3>
+                        <h4 style="text-decoration: none;"
+                            class="d-flex align-item-center justify-content-center  gap-4"
+                            style="text-decoration: none;">
+                            <a href="" class="text-light " style="text-decoration: none;"><i
+                                    class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-instagram-line"></i></a>
+                            <a href="" class="text-light" style="text-decoration: none;"><i
+                                    class="ri-twitter-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 bg-dark">
+        <div class="row bg-dark">
+            <div class="col-md-6 bg-dark d-flex align-item-center justify-content-center flex-column">
+
+                <div class="h2 d-flex align-item-center justify-content-center"
+                    style="color: orangered;font-family: Segoe Print;">Suscribe</div>
+                <div class="h1 d-flex align-item-center justify-content-center text-light">Our Newsletter</div>
+                <h6 class="d-flex align-item-center justify-content-center pt-4"><img src="./images/title-shape.svg"
+                        alt="" height="40%" width="40%">
+
+                </h6>
+                <h5 class="text-light d-flex align-item-center justify-content-center">Subscribe to our newsletter
+                    and get attractive offers.</h5>
+                <h2> <span class="input d-flex align-item-center justify-content-center pt-3"> <input type="text"
+                            placeholder="Enter Your Email"> <span class="suscribe">Suscribe Now</span></span></h2>
+            </div>
+            <div class="col-md-6 pt-3 pb-3">
+                <img src="./images folder/map.png" alt="" class="h-100 w-100">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid " style="background-color: rgb(24, 22, 22);">
+        <div class="row">
+            <div class="col-md-3 ">
+                <h1 class="d-flex align-item-center justify-content-center pt-5 pb-5"><img src="./images/cf-logo.png"
+                        alt="" height="30%" width="30%"></h1>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-3 "> <strong
+                        class="text-uppercase text-light d-flex align-item-center justify-content-center"> Around
+                        The Web</strong></h6>
+                <a href="" class="text-light d-flex align-item-center justify-content-center pt-3 pb-5 h3"><i
+                        class="ri-bluesky-line"></i>&nbsp;&nbsp; <i class="ri-apple-fill"></i> &nbsp;&nbsp;<i
+                        class="ri-facebook-fill"></i>&nbsp;&nbsp; <i class="ri-github-fill"></i>&nbsp;&nbsp; <i
+                        class="ri-instagram-line"></i>&nbsp;&nbsp;<i class="ri-whatsapp-line"></i></a>
+            </div>
+            <div class="col-md-3 d-flex align-item-center justify-content-center flex-column text-uppercase">
+                <a href="" class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light h6">Home</a>
+                <a href="" class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light h6">about-us</a>
+                <a href="" class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light h6">menu</a>
+                <a href="" class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light h6">Our
+                    chef</a>
+                <a href="" class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light h6">Contact</a>
+            </div>
+            <div class="col-md-3 d-flex align-item-center justify-content-center flex-column text-uppercase">
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">+1 234 567 890</h6>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">
+
+                    INFO@CHOOSYFOODY.COM</h6>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">77 GROVE STREET</h6>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">SOUTH NEWYORK</h6>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">NEWYORK 10013</h6>
+                <h6 class="d-flex align-item-center justify-content-center pt-2 pb-2 text-light">UNITED STATES</h6>
+            </div>
+            <div class="col-md-3 mt-4">
+                <form action="">
+                    <h5 class="d-flex align-item-center justify-content-center text-uppercase"
+                        style="color: orangered;">Write something to us</h5>
+                    <input type="text " class="form-control  text-light " placeholder="Your Name">
+                    <input type="text" class="form-control mt-3 " placeholder="Your Email">
+                    <textarea class="form-control mt-3" rows="4" cols="5">Your Message</textarea>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-fluid  text-light">
+
+            <h5 class=" pt-2 pb-5 text-light">
+                Template made by Sana Sattar E-mail: sanasattar622@gmail.com
+            </h5>
+        </div>
+
+
+
+
+<!-- <script>
+    const togglebutton=document.getElementsByClassName('navbar-toggler'
+
+    );
+    const navLinks=document.getElementsByClassName('nav-link');
+    togglebutton.addEventListener('click', => {
+        navLinks.classList.toggle('active');
+    })
+</script> -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+
+        <script src="./javaScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

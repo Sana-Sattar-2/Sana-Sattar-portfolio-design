@@ -1,0 +1,174 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin:5%;
+background: url(./images/logo4.png);
+background-repeat: no-repeat;
+    background-size: cover;
+}
+#form-wrapper{
+    border: 0px solid;
+    border-radius:40px ;
+    width: 40%;
+    margin:7% 30%;
+    padding:2%;
+    background-color:white;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    /* background: linear-gradient(90deg, rgb(247 247 247), rgb(201 141 141)); */
+    backdrop-filter: blur (100px);
+    transition: 10s;
+}
+.form-content{
+    padding-left:35%;
+}
+label {
+    cursor: pointer;
+  }
+  img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+  }
+.form-input{
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 20px;
+    color: rgb(0, 0, 0)
+}
+.input{
+width: 100%;
+height: 40px;
+outline: none;
+border: none;
+border-bottom: 2px solid rgb(0, 0, 0);
+padding-left: 55px;
+background-color: transparent;
+font-size: 20px;
+color: rgb(0, 0, 0);
+background-image: url("./images/username\ logo.png");
+background-position: 10px 10px;
+background-repeat: no-repeat;
+background-size: 20px;
+}
+.input2{
+width: 100%;
+height: 40px;
+outline: none;
+border: none;
+border-bottom: 2px solid rgb(0, 0, 0);
+padding-left: 60px;
+background-color: transparent;
+font-size: 20px;
+color: rgb(0, 0, 0);
+background-image: url(./images/password\ logo.png);
+background-position: 10px 10px;
+background-repeat: no-repeat;
+background-size: 20px;
+   
+}
+.checkbox-wrapper{
+    width: 100%;
+    font: 1em sans-serif;
+    font-size: 15px;
+    margin-left: 2%;
+    display: block;
+    color: rgb(138, 120, 96); 
+}
+.Remember{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: inline;
+    font-size: medium;
+    padding-left: 40px;
+/* 
+color: rgb(139, 139, 103); */
+display: inline;
+
+}
+input[type="checkbox"]{
+    height: 15px;;
+    width: 15px;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+.forgetpassword{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: inline;
+    font-size: small;
+    padding-left: 100px;
+
+color: rgb(66, 66, 50);
+display: inline;
+
+}
+a:link,
+a:visited {
+  background-color: rgb(140, 140, 229);
+  color: aliceblue;
+  width: 70%;
+  display: inline-block;
+  padding-left: 20%;
+  font-size: 20px;
+  padding: 12px;
+  margin: 6%;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  background-color: rgb(84, 84, 201);
+  text-decoration: none;
+  color: wheat;
+}
+.login {
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 10%;
+  font-size: 30px;
+  width: 100%;
+  font: 1em sans-serif;
+  font-size: 33px;
+  color: azure;
+  text-decoration: none;
+}
+/* 
+.input-icon {
+    position: relative;
+  }
+  
+  .input-icon:before {
+    content: "\f007"; /* Font Awesome user icon */
+    /* font-family: FontAwesome;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+  }
+   */ 
+   /* #myinput::-webkit-input-placeholder::before { 
+    content: ' ';
+    position: absolute;
+    top: 2px; /* adjust icon position */
+    /* left: 0px;
+    width: 14px; /* size of a single icon */
+    /* height: 14px;
+    background-image: url("/images"); /* all icons in a single file */
+    /* background-repeat: no-repeat;
+    background-position: -48px 0px; /* position of the right icon */
+/* } */ 
+   .icone{
+    background-image: url("./images/username\ logo.png");
+    background-position: 20px 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+   } 
+   .icones{
+    background-image: url("./images/logopassword.png");
+    background-position: 18px 4px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+   } 

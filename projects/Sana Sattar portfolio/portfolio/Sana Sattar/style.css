@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background:url(./b.g.png) ;
+    background-position: center;
+    background-size: cover;
+    background-repeatno-repeat; */
+    animation: myimg 20s linear infinite;
+}
+
+@keyframes myimg {
+    0% {
+        background: url(./images/b1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+
+    25% {
+        background: url(./images/bbbb.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+    }
+
+    50% {
+        background: url(./images/h.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background: url(./images/b1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background: url(./images/h.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+span>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: -1px 0px 20px 14px #ffffff;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 88%;
+ background: linear-gradient(180deg,rgb(241, 241, 75),rgb(19, 19, 255));
+    /* opacity: 0.6; */
+    color: #ffffff;
+
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 5px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(8, 8, 194);
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+a{
+    color:  #695aa6;
+    text-decoration: none;
+
+}
+  a:hover{
+    color:  #ffffff;
+    text-decoration: none;
+}
+.code{
+  border: 1px solid  #695aa6;
+  transition: background-color ,color , box-shadow 2s;
+}
+.code:hover{
+    background-color: #695aa6;
+    color: aliceblue;
+    cursor: pointer;
+ 
+    box-shadow: -1px 1px 17px 0px #b6aed5;
+}
+
+

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card1{
+    width: 100%;
+    height: 50%;
+/* border-radius: 50%; */
+border: 1px solid;
+
+}
+.card2{
+    width: 100%;
+    height: 50%;
+/* border-radius: 50%; */
+border: 1px solid;
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.flowers{
+    width: 50%;
+    height: 100%;
+/* border-radius: 50%; */
+border: 1px solid; 
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home{
+    width: 50%;
+    height: 100%;
+/* border-radius: 50%; */
+border: 1px solid; 
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeSana{
+    width: 400px;
+    height: 300px;
+/* border-radius: 50%; */
+border: 1px solid; 
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.homeSana1{
+    width: 100%;
+    height: 50%;
+/* border-radius: 50%; */
+border: 1px solid; 
+display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: aquamarine;
+}
+.one{
+    width: 30%;
+    height: 50%;
+/* border-radius: 50%; */
+border: 1px solid; 
+}
+.tow{
+    width: 30%;
+    height: 100%;
+/* border-radius: 50%; */
+border: 1px solid; 
+}
+.dots{
+    width: 30px;
+    height: 30px;
+margin-top: 50px;
+border-radius: 50%;
+/* border-radius: 50%; */
+border: 1px solid; 
+}
+.dots1{
+    width: 100%;
+    height: 30px;
+/* margin-top: 60px; */
+/* border-radius: 50%; */
+/* border-radius: 50%; */
+border: 1px solid; 
+}
+.flowers1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+border: 1px solid; 
+}
+.roots{
+    width: 10%;
+    height: 60%;
+/* border-radius: 20px 20px 0px 0px; */
+border: 1px solid; 
+}
+.leaf{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+border: 1px solid;  
+position: relative;
+}
+.oneleaf{
+width: 80px;
+height: 80px;
+border-radius:50%  0%  50% 0% ;
+border: 1px solid;  
+position: absolute;
+top: 100px;
+left: 160px;
+}
+.towleaf{
+    width: 80px;
+    height: 80px;
+    border-radius:0% 50% 0% 50%;
+    border: 1px solid; 
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.threeleaf{
+    width: 80px;
+    height: 80px;
+    border-radius: 50% 0% 50% 0%;
+    border: 1px solid; 
+    position: absolute;
+    top: 70px;
+    left: 150px;
+}
+.fourleaf{
+    width: 80px;
+    height: 80px;
+    border-radius:0%  50%  0% 50% ;
+    border: 1px solid; 
+    position: absolute;
+    top: 60px;
+    left: 110px;
+}

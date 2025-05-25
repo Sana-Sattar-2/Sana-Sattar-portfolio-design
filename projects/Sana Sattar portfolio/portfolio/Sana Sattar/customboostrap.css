@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.carouselimg{
+  height: 300px; 
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.navbar-brand > span{
+  color: #272727;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+.conatanier {
+
+  width: 96%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conatanier2 {
+
+  width: 96%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sana{
+  color: white;
+  cursor: pointer;
+}
+#sana:hover{
+  color: rgb(248, 150, 70);
+}
+.btn1 {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(248, 150, 70);
+  color: aliceblue;
+  transition: all .2s ease-in-out;
+  border: none;
+}
+.btn3{
+  color:rgb(107, 183, 190) ;
+  transition: all .2s ease-in-out;
+}
+.btn3:hover{
+color:rgb(248, 150, 70) ;
+cursor: pointer;
+}
+.btn1:hover {
+  background-color: transparent;
+  border: 1px solid rgb(248, 150, 70);
+  color: rgb(248, 150, 70);
+}
+
+.btn2:hover {
+  background-color: transparent;
+  border: 1px solid rgb(107, 183, 190);
+  color: rgb(107, 183, 190);
+}
+
+.btn2 {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(107, 183, 190);
+  color: aliceblue;
+  transition: all .2s ease-in-out;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+/* @media (max-width:576px) {
+  .conatanier {
+   margin-top: 600px; 
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+#p{
+  width: 100%;
+  margin-top: 300px;
+}
+  #img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px 130px 0px;
+  }
+
+  .btn1 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn2 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .conatanier2 {
+    width: 2000px;
+    height: 300px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+  }
+
+  .card-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media (max-width:786px) {
+  .conatanier {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+#margin{
+  margin-top: 300px;
+}
+  #img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px 130px 0px;
+  }
+
+  .btn1 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn2 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .conatanier2 {
+    width: 2000px;
+    height: 300px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+  }
+
+  .card-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media (max-width:1200px) {
+  .conatanier {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+#margin{
+  margin-top: 300px;
+}
+  #img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px 130px 0px;
+  }
+
+  .btn1 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .btn2 {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .conatanier2 {
+    width: 2000px;
+    height: 300px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+  }
+
+  .card-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+} */
