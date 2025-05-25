@@ -9,140 +9,11 @@
 
 	<link rel="stylesheet" href="./src/css/style.css">
 	<link rel="stylesheet" href="./src/css/slick.css">
+	<link rel="stylesheet" href="src/css/index.css">
 	<title>Sana  Professional</title>
 	<style>
 
 
-    .btn-container {
-      position: relative;
-    }
-
-    .star-btn {
-      padding: 6px 30px;
-      font-size: 18px;
-      color: white;
-      background: #1e1e1e;
-      border: 2px solid #ffffff20;
-      border-radius: 50px;
-      cursor: pointer;
-      overflow: hidden;
-      z-index: 1;
-      position: relative;
-      transition: background 0.3s eas;
-    }
-
-    .star-btn:hover {
-      background: #292929;
-    }
-
-    .stars {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300px;
-      height: 300px;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      z-index: 0;
-    }
-
-    .stars span {
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: white;
-      border-radius: 50%;
-      opacity: 0;
-      animation: fly 1s linear infinite;
-    }
-
-    /* Generate multiple stars */
-    .stars span:nth-child(1) { top: 50%; left: 50%; animation-delay: 0s; }
-    .stars span:nth-child(2) { top: 40%; left: 60%; animation-delay: 0.1s; }
-    .stars span:nth-child(3) { top: 60%; left: 40%; animation-delay: 0.2s; }
-    .stars span:nth-child(4) { top: 45%; left: 70%; animation-delay: 0.3s; }
-    .stars span:nth-child(5) { top: 55%; left: 30%; animation-delay: 0.4s; }
-
-    @keyframes fly {
-      0% {
-        transform: scale(1) translate(0, 0);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(0.5) translate(150px, -150px);
-        opacity: 0;
-      }
-    }
-
-    .btn-container:hover .stars span {
-      animation-play-state: running;
-    }
-
-    .stars span {
-      animation-play-state: paused;
-    }
-	 .bubble-zone {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-    }
-
-    .bubble-zone:hover .bubble {
-      opacity: 1;
-      animation-play-state: running;
-    }
-
-    .bubble {
-      position: absolute;
-      bottom: 0;
-      width: 20px;
-      height: 20px;
-      background: radial-gradient(circle, #00f0ff, transparent 70%);
-      border-radius: 50%;
-      opacity: 0;
-      animation: float-up 3s linear infinite;
-      animation-play-state: paused;
-    }
-
-    .bubble:nth-child(1) { left: 10%; animation-delay: 0s; }
-    .bubble:nth-child(2) { left: 30%; animation-delay: 0.5s; }
-    .bubble:nth-child(3) { left: 50%; animation-delay: 1s; }
-    .bubble:nth-child(4) { left: 70%; animation-delay: 1.5s; }
-    .bubble:nth-child(5) { left: 90%; animation-delay: 2s; }
-
-    @keyframes float-up {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-150px) scale(0.5);
-        opacity: 0;
-      }
-    }
-	
-    .typewriter {
-      font-size: 28px;
-      border-right: 2px solid #c18f59;
-      white-space: nowrap;
-      overflow: hidden;
-	  
-      width: 18ch;
-	  color: #e0e0e0;
-      animation: 
-	  
-        typing 3s steps(18) 1s infinite alternate,
-        blink 0.7s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 20ch }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent; }
-    }
 
   </style>
 	
@@ -207,7 +78,24 @@
 	<section class="fh5co-top-banner mt-0 pt-5" id="home"  data-aos="fade-up">
 		<div class="top-banner__inner site-container pt-3">
 			<div class="top-banner__image">
-				<img src="./src/images/top-banner-author.jpg" alt="author image " data-aos="fade-up" class=" px-md-4 pt-md-2">
+				<div class="buble-container">
+	<img src="./src/images/top-banner-author.jpg" alt="author image " data-aos="fade-up" class=" ">
+  
+  <!-- Bubbles -->
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+</div>
+			
 			</div>
 			<div class="top-banner__text"  data-aos="fade-up">
 				<div class="top-banner__text-up">
@@ -252,8 +140,51 @@
 	<section class="fh5co-about-me" id="about" data-aos="fade-up">
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
+					
 				<div class="portfolio__img">
-					<img src="./src/images/about-me.jpg" class="about-me__profile" alt="about me profile picture" style="width:100%; " data-aos="fade-up">
+									<div class="buble-container">
+<img src="./src/images/about-me.jpg" class="about-me__profile" alt="about me profile picture" style="width:100%; " data-aos="fade-up">
+  
+  <!-- Bubbles -->
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+    <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+  <div class="buble"></div>
+</div>
+
+					
 				</div>
 				<div class="portfolio__bottom" data-aos="fade-up">
 					<div class="portfolio__name">
@@ -297,7 +228,11 @@
 		<div class="con " id="skills" style="display: flex; align-items: center;justify-content: center; margin-top: 50px; margin-bottom: 150px;">	
 			<div class="container " style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction:column;">
 				<h2 class="universal-h2 universal-h2-bckg" style="margin-top: 60px; margin-bottom: 60px;" data-aos="fade-up">Skills</h2>
+				
 			<div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap ;" data-aos="fade-up">
+
+				
+
 				<img src="./src/images/blog1.jpg" alt="" style="width: 100px;" id="bayName">
 				<img src="./src/images/blog2.jpg" alt="" style="width: 100px;" id="bayName">
 <!-- <div class="progress bg-info">
@@ -324,10 +259,13 @@
 		<div class="site-container   ">
 			<h2 class="universal-h2 universal-h2-bckg " data-aos="fade-up">Portfolio</h2>
 			<div class="books gap-5 d-flex align-items-center  justify-content-center px-md-5 " >
-				<div class="single-book pe-md-1 ">
+				<div class="single-book pe-md-2 ">
 					<a href="./projects/Solar System/ind.html" class="single-book__img" target="_blank">
 						<img src="./src/images/dash3.png" alt="single book and cd" data-aos="fade-up"> 
 						<div class="single-book_download">
+
+
+							
 							<img src="./src/images/download.svg" alt="dwonlaod image">
 						</div>
 					</a>
@@ -340,6 +278,9 @@
 					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" class="single-book__img" target="_blank">
 						<img src="./src/images/kiadmin.png" alt="single book and cd"  data-aos="fade-up">
 						<div class="single-book_download">
+
+
+							
 							<img src="./src/images/download.svg" alt="book image">
 						</div>
 					</a>
@@ -347,7 +288,7 @@
 					<span class="single-book__price"> Kiadmin  Dashbaord</span>
 					
 				</div>
-					<div class="single-book   pe-md-1">
+					<div class="single-book   pe-md-2">
 					<a href="./projects/Sana Sattar portfolio/portfolio/index.html" class="single-book__img" target="_blank">
 						<img src="./src/images/port.png" alt="single book and cd" data-aos="fade-up"> 
 						<div class="single-book_download">
