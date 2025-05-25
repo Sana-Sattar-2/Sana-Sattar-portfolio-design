@@ -10,8 +10,145 @@
 	<link rel="stylesheet" href="./src/css/style.css">
 	<link rel="stylesheet" href="./src/css/slick.css">
 	<title>Sana Sattar</title>
+	<style>
+
+
+    .btn-container {
+      position: relative;
+    }
+
+    .star-btn {
+      padding: 6px 30px;
+      font-size: 18px;
+      color: white;
+      background: #1e1e1e;
+      border: 2px solid #ffffff20;
+      border-radius: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      transition: background 0.3s eas;
+    }
+
+    .star-btn:hover {
+      background: #292929;
+    }
+
+    .stars {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    .stars span {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: fly 1s linear infinite;
+    }
+
+    /* Generate multiple stars */
+    .stars span:nth-child(1) { top: 50%; left: 50%; animation-delay: 0s; }
+    .stars span:nth-child(2) { top: 40%; left: 60%; animation-delay: 0.1s; }
+    .stars span:nth-child(3) { top: 60%; left: 40%; animation-delay: 0.2s; }
+    .stars span:nth-child(4) { top: 45%; left: 70%; animation-delay: 0.3s; }
+    .stars span:nth-child(5) { top: 55%; left: 30%; animation-delay: 0.4s; }
+
+    @keyframes fly {
+      0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0.5) translate(150px, -150px);
+        opacity: 0;
+      }
+    }
+
+    .btn-container:hover .stars span {
+      animation-play-state: running;
+    }
+
+    .stars span {
+      animation-play-state: paused;
+    }
+	 .bubble-zone {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .bubble-zone:hover .bubble {
+      opacity: 1;
+      animation-play-state: running;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: 0;
+      width: 12px;
+      height: 12px;
+      background: radial-gradient(circle, #00f0ff, transparent 70%);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float-up 3s linear infinite;
+      animation-play-state: paused;
+    }
+
+    .bubble:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .bubble:nth-child(2) { left: 30%; animation-delay: 0.5s; }
+    .bubble:nth-child(3) { left: 50%; animation-delay: 1s; }
+    .bubble:nth-child(4) { left: 70%; animation-delay: 1.5s; }
+    .bubble:nth-child(5) { left: 90%; animation-delay: 2s; }
+
+    @keyframes float-up {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) scale(0.5);
+        opacity: 0;
+      }
+    }
+	
+    .typewriter {
+      font-size: 28px;
+      border-right: 2px solid #c18f59;
+      white-space: nowrap;
+      overflow: hidden;
+	  
+      width: 18ch;
+	  color: #e0e0e0;
+      animation: 
+	  
+        typing 3s steps(18) 1s infinite alternate,
+        blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 20ch }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+  </style>
+	
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="./figma design 2/css folder/cssfile.css">
+	  
 </head>
 <body>
 
@@ -53,7 +190,7 @@
       <span class="navbar-toggler-icon text-white"></span>
     </button>
     <div class="collapse navbar-collapse   " id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+      <ul class="navbar-nav ms-auto  mb-lg-0 gap-4">
         <li class="nav-item">
           <a class="nav-link  text-opacity-75 active text-white  " aria-current="page" href="#home" style="font-size: 1.15rem; font-family: Arial, Helvetica, sans-serif;">Home</a>
         </li>
@@ -96,25 +233,48 @@
 	<!-- Navigation end -->
 
 	<!-- Top banner -->
-	<section class="fh5co-top-banner" id="home"  data-aos="fade-up">
-		<div class="top-banner__inner site-container">
+	<section class="fh5co-top-banner mt-0 pt-5" id="home"  data-aos="fade-up">
+		<div class="top-banner__inner site-container pt-3">
 			<div class="top-banner__image">
-				<img src="./src/images/top-banner-author.jpg" alt="author image" data-aos="fade-up">
+				<img src="./src/images/top-banner-author.jpg" alt="author image " data-aos="fade-up" class=" px-md-4 pt-md-2">
 			</div>
 			<div class="top-banner__text"  data-aos="fade-up">
 				<div class="top-banner__text-up">
-					<span class="brand-span" style="font-size: px; line-height: 30px;">Hello! I'm</span>
+					<span class="brand-span" style="font-size: 20px; line-height: 10px;">Hello! I'm</span>
 					<h2 class="top-banner__h2">Sana</h2>
 				</div>
 				<div class="top-banner__text-down">
 					<h2 class="top-banner__h2">Sattar</h2>
-					<span class="brand-span"style="font-size: 16px; line-height: 30px;">Front-end-Developer</span>
+					<!-- <span class="brand-span"style="font-size: 20px; line-height: 30px;">Front-end-Developer</span> -->
+					
 				</div>
-				<p style="font-size: 15px; line-height: 30px;">I am a Front-end-Developer and creates the different Design  and different Website</p>
-				<a href="./src/cv.png" class="brand-button" style="font-size: 20px; line-height: 30px;" download="true">Resume </a>
+				   <div class="typewriter">Front End Developer</div>
+				<p style="font-size: 17px; line-height: 30px;">I am a Front-end-Developer and creates the different Design  and different Website</p>
+				<!-- <a href="./src/cv.png" class="brand-button" style="font-size: 20px; line-height: 30px;" download="true">Resume </a> -->
+				  <div class="btn-container">
+ <a href="./src/cv.png"    style="font-size: 20px; line-height: 30px;" download="true">    <button class="star-btn">Resume </button></a>
+    <div class="stars">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+	   <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+	  
+    </div>
+  </div>
 			</div>
 		</div>
+
+
+
+
 	</section>
+
 	<!-- Top banner end -->
 
 	<!-- About me -->
@@ -149,11 +309,16 @@
 						And  i live in lodhran city . Website making , dashbaord design and template   making design this are my passion.</p>
 						<h4>Front-end-Developer</h4>
 						<p class="p-white">See me</p>
-					</div>
+						
 				</div>
 			</div>
 		</div>
+		
+  <!-- <div class="bubble-zone"> -->
+
+  <!-- </div> -->
 		<div class="about-me-bckg"></div>
+
 	</section>
 
 	   <!-- SKILLS part start -->
@@ -471,6 +636,13 @@
 			</div>
 	
 	</footer>
+	  <!-- <div class="bubble-zone">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div> -->
 	<!-- Footer end -->
 
 	<!-- Scripts -->
@@ -481,6 +653,9 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
   AOS.init();
+</script>
+<script>
+
 </script>
 
 </body>
