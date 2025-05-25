@@ -1,0 +1,20 @@
+#conatiner{
+width: 100%;
+height: 100%;
+/* border: 1px solid ; */
+}
+#sana{
+    width: 100%;
+height: auto;
+/* border: 1px solid ; */
+}
+#s{
+    width: 15%;
+    height:100% ;
+    /* border: 1px solid black; */
+}
+#g{
+    width: 85%;
+    height:100% ;
+    /* border: 1px solid black; */
+}
