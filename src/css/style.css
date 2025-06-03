@@ -179,19 +179,19 @@
 
 @media (max-width: 1600px) {
   .fh5co-top-banner {
-    padding-top: 180px;
+    padding-top: 120px;
   }
 }
 
 @media (max-width: 1250px) {
   .fh5co-top-banner {
-    padding-top: 130px;
+    padding-top: 110px;
   }
 }
 
 @media (max-width: 520px) {
   .fh5co-top-banner {
-    padding-top: 105px;
+    padding-top: 120px;
   }
 }
 
