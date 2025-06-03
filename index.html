@@ -15,61 +15,98 @@
 	<title>Sana Professional</title>
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="./figma design 2/css folder/cssfile.css">
+	<!-- <link rel="stylesheet" href="./figma design 2/css folder/cssfile.css"> -->
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
 
+		.nav-link {
+			position: relative;
+			color: #d6d1d1;
+		}
+
+		.nav-link::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			left: 0;
+			bottom: 0;
+			background-color: #cfcfcf;
+			transition: 0.3s;
+			color: rgb(236, 224, 224);
+		}
+
+		.nav-link:hover::after {
+			width: 100%;
+			color: rgb(212, 206, 206);
+		}
+
+		.active-link {
+			font-weight: bold;
+			color: #fffdfd !important;
+		}
+	</style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
+	<!-- Navbar -->
+	<nav id="navbar" class="navbar navbar-expand-lg   fixed-top   bg-dark ">
+		<div class="container">
+			<a class="navbar-brand" href="./src/images/site-logo.png" class="">
+				<img src="./src/images/site-logo.png" alt="" style="width: 70px;">
+			</a>
+			<button class="navbar-toggler navbar-toggler text-bg-warning" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon text-white"></span>
+			</button>
+			<div class="collapse navbar-collapse   " id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto  mb-lg-0 gap-4">
+					<li class="nav-item">
+						<a class="nav-link   active   " aria-current="page" href="#home"
+							style="font-size: 1.15rem; font-family: Arial, Helvetica, sans-serif;">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link   " href="#about" style="font-size: 1.15rem; ">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link   " aria-current="page" href="#skills"
+							style="font-size: 1.15rem; ">Skills</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link  " href="#portfolio" role="button" style="font-size: 1.15rem; "
+							aria-expanded="false">
+							Portfolio
+						</a>
+						<!-- <ul class="dropdown-menu">
+							<li><a class="dropdown-item  " href="#" style="font-size: 1.15rem; ">Dashbaord</a></li>
+							<li><a class="dropdown-item  " href="#" style="font-size: 1.15rem;">Website</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item  " style="font-size: 1.15rem;;" href="#">Figma Design</a></li>
 
-	<!-- Navigation -->
+						</ul> -->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  " aria-current="page" href="#reviewer"
+							style="font-size: 1.15rem; ">Reviewers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link   " aria-current="page" href="#contact"
+							style="font-size: 1.15rem;">Contact</a>
+					</li>
 
-		
-	<nav class="navbar navbar-expand-lg  sticky-top z-2 w-100  bg-opacity-100 text-white" style="background-color: #000000;">
-  <div class="container">
-    <a class="navbar-brand" href="./src/images/site-logo.png" class="">
-		<img src="./src/images/site-logo.png" alt="" style="width: 70px;">
-	</a>
-    <button class="navbar-toggler navbar-toggler text-bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-white"></span>
-    </button>
-    <div class="collapse navbar-collapse   " id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto  mb-lg-0 gap-4">
-        <li class="nav-item">
-          <a class="nav-link  text-opacity-75 active text-white  " aria-current="page" href="#home" style="font-size: 1.15rem; font-family: Arial, Helvetica, sans-serif;">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white text-opacity-75 " href="#about" style="font-size: 1.15rem; ">About</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link  text-white text-opacity-75 " aria-current="page" href="#skills" style="font-size: 1.15rem; ">Skills</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link  text-white text-opacity-75 " href="#portfolio" role="button"  style="font-size: 1.15rem; " aria-expanded="false">
-            Portfolio
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-dark text-opacity-75 " href="#" style="font-size: 1.15rem; ">Dashbaord</a></li>
-            <li><a class="dropdown-item text-dark " href="#" style="font-size: 1.15rem;">Website</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-dark text-opacity-75 " style="font-size: 1.15rem;;" href="#">Figma Design</a></li>
-			
-          </ul>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link text-white text-opacity-75 " aria-current="page" href="#reviewer" style="font-size: 1.15rem; ">Reviewers</a>
-        </li>
-		  <li class="nav-item">
-          <a class="nav-link  text-white text-opacity-75 " aria-current="page" href="#contact" style="font-size: 1.15rem;">Contact</a>
-        </li>
-     
-      </ul>
-  
-    </div>
-  </div>
-</nav>
-	
+				</ul>
 
-<!-- 
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="#">MyBrand</a>
@@ -106,8 +143,8 @@
 	<!-- Navigation end -->
 
 	<!-- Top banner -->
-	<section class="fh5co-top-banner mt-0 pt-5" id="home" data-aos="fade-up">
-		<div class="top-banner__inner site-container pt-5">
+	<section class="fh5co-top-banner " id="home" data-aos="fade-up">
+		<div class="top-banner__inner site-container ">
 			<div class="top-banner__image">
 				<div class="buble-container">
 					<img src="./src/images/top-banner-author.jpg" alt="author image " data-aos="fade-up" class=" ">
@@ -161,10 +198,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 	</section>
 
 	<!-- Top banner end -->
@@ -266,7 +299,7 @@
 
 	<!-- SKILLS part start -->
 
-	<div class="con " id="skills"
+	<section class="con " id="skills"
 		style="display: flex; align-items: center;justify-content: center; margin-top: 50px; margin-bottom: 150px;">
 		<div class="container "
 			style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction:column;">
@@ -295,7 +328,7 @@
 			</div>
 
 		</div>
-	</div>
+	</section>
 
 	<!-- skills part end -->
 	<!-- About me end -->
@@ -305,18 +338,18 @@
 		<div class="site-container   ">
 			<h2 class="universal-h2 universal-h2-bckg " data-aos="fade-up">Portfolio</h2>
 			<div class="books  d-flex align-items-center  justify-content-center px-md-5 ">
-				<div class="single-book  px-md-2"> 
-					
+				<div class="single-book  px-md-2">
+
 					<a href="./projects/Solar System/ind.html" class="single-book__img shadow-lg" target="_blank">
 
-						
+
 						<img src="./src/images/dash3.png" alt="single book and cd" data-aos="fade-up">
 						<div class="single-book_download">
 
-	
+
 
 							<img src="./src/images/download.svg" alt="dwonlaod image">
-						
+
 						</div>
 					</a>
 
@@ -325,8 +358,8 @@
 				</div>
 
 				<div class="single-book px-md-2  ">
-					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" class="single-book__img shadow-lg"
-						target="_blank">
+					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html"
+						class="single-book__img shadow-lg" target="_blank">
 						<img src="./src/images/kiadmin.png" alt="single book and cd" data-aos="fade-up">
 						<div class="single-book_download">
 
@@ -364,7 +397,8 @@
 
 				</div>
 				<div class="single-book px-md-2  ">
-					<a href="./projects/figma design/figma design.html" class="single-book__img shadow-lg" target="_blank">
+					<a href="./projects/figma design/figma design.html" class="single-book__img shadow-lg"
+						target="_blank">
 						<img src="./src/images/figma design.png" alt="single book and cd" data-aos="fade-up">
 						<div class="single-book_download">
 							<img src="./src/images/download.svg" alt="book image">
@@ -388,8 +422,8 @@
 		</div>
 	</section>
 
-	<section class="fh5co-quotes  " data-aos="fade-up">
-		<div class="site-container" id="reviewer">
+	<section class="fh5co-quotes  " id="reviewer" data-aos="fade-up">
+		<div class="site-container">
 			<div class="about-me-slider  " data-aos="fade-up">
 				<div>
 					<h2 class="universal-h2 universal-h2-bckg">What Students Are Saying</h2>
@@ -514,9 +548,39 @@
 </div> -->
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		// Scrollspy Active Class Fix
+		const navLinks = document.querySelectorAll('.nav-link');
+		window.addEventListener('scroll', () => {
+			let current = '';
+			document.querySelectorAll('section').forEach(section => {
+				const sectionTop = section.offsetTop - 120;
+				if (scrollY >= sectionTop) {
+					current = section.getAttribute('id');
+				}
+			});
+
+			navLinks.forEach(link => {
+				link.classList.remove('active-link');
+				if (link.getAttribute('href').includes(current)) {
+					link.classList.add('active-link');
+				}
+			});
+		});
+	</script>
+
+	<script>
+		// Close navbar when clicking outside on small screens
+		document.addEventListener('click', function (event) {
+			const nav = document.querySelector('#navbarNav');
+			const toggler = document.querySelector('.navbar-toggler');
+			if (nav.classList.contains('show') && !nav.contains(event.target) && !toggler.contains(event.target)) {
+				toggler.click();
+			}
+		});
+	</script>
 
 	<script src="./src/js/jquery.min.js"></script>
 	<script src="./src/js/slick.min.js"></script>
