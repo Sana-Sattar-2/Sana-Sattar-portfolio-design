@@ -19,8 +19,8 @@
     .buble {
       position: absolute;
       bottom: 0;
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       background-color: rgba(211, 209, 209, 0.6);
       border-radius: 50%;
       animation: floatBubble 3s ease-in infinite;
@@ -66,8 +66,8 @@
     .bubble {
       position: absolute;
       bottom: 0;
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
       background-color: rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       animation: floatBubble 3s ease-in infinite;
