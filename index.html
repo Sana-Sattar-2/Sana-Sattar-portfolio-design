@@ -6,8 +6,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+	<link rel="stylesheet" href="./projects/dashboard-design-made-by-Sana-Sattar/bootsrap/bootsrap.css">
 
 	<link rel="stylesheet" href="./src/css/style.css">
 	<link rel="stylesheet" href="./src/css/slick.css">
@@ -26,7 +25,15 @@
 			color: #bebdbd;
 		}
 
-		.nav-link::after {
+		.nav-item:active {
+			color: aliceblue !important;
+		}
+
+		.nav-link:hover {
+			color: #fffefe !important;
+		}
+
+		/* .nav-link::after {
 			content: '';
 			position: absolute;
 			width: 0;
@@ -35,37 +42,167 @@
 			bottom: 0;
 			background-color: #cfcfcf;
 			transition: 0.3s;
-			color: rgb(214, 212, 212);
-		}
+			color: rgb(214, 212, 212) !important;
+		} */
 
 		.nav-link:hover::after {
 			width: 100%;
-			color: rgb(212, 206, 206);
+			color: rgb(212, 206, 206) !important;
 		}
 
-		.active-link {
-			font-weight: bold;
-			color: #fffdfd !important;
+		.navbar .nav-link.active {
+			color: white !important;
 		}
+
+		.navbar .nav-link:hover {
+			color: #f8f9fa;
+			/* Bootstrap's light color */
+		}
+
 		#scrollTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  box-shadow: 10px 10px 1px white;
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			background-color: #333;
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 50%;
+			cursor: pointer;
+			display: none;
+			box-shadow: 10px 10px 1px white;
+		}
+
+		#scrollTopBtn:hover {
+			background-color: #555;
+			box-shadow: 10px 10px 1px white;
+		}
+
+		.hover-wrapper {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.hover-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			/* semi-transparent black */
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity 0.5s ease;
+			font-size: 1.2rem;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.hover-wrapper:hover .hover-text {
+			opacity: 5;
+		}
+
+		.card-link {
+			text-decoration: none;
+		}
+
+		.card-container {
+			position: relative;
+			width: 300px;
+			height: 200px;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease;
+		}
+
+		.card-container:hover {
+			transform: scale(1.02);
+		}
+
+		.card-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		.card-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.6);
+			/* semi-transparent */
+			color: white;
+			font-size: 1.1rem;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.card-container:hover .card-overlay {
+			opacity: 1;
+		}
+		.card-link {
+  text-decoration: none;
+  display: block;
 }
 
-#scrollTopBtn:hover {
-  background-color: #555;
-    box-shadow: 10px 10px 1px white;
+.card-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* 3:2 aspect ratio */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.card-container:hover .card-overlay {
+  opacity: 1;
 }
 
 	</style>
@@ -78,19 +215,19 @@
 			<a class="navbar-brand" href="./src/images/site-logo.png" class="">
 				<img src="./src/images/site-logo.png" alt="" style="width: 70px;">
 			</a>
-			<button class="navbar-toggler navbar-toggler text-bg-warning" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			<button class="navbar-toggler  text-bg-warning" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon text-white"></span>
 			</button>
-			<div class="collapse navbar-collapse   " id="navbarSupportedContent">
+			<div class="collapse navbar-collapse   " id="navbarNav">
 				<ul class="navbar-nav ms-auto  mb-lg-0 gap-4">
 					<li class="nav-item">
 						<a class="nav-link   active   " aria-current="page" href="#home"
 							style="font-size: 1.15rem; font-family: Arial, Helvetica, sans-serif;">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link   " href="#about" style="font-size: 1.15rem; ">About</a>
+						<a class="nav-link  " href="#about" style="font-size: 1.15rem; ">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link   " aria-current="page" href="#skills"
@@ -101,15 +238,7 @@
 							aria-expanded="false">
 							Portfolio
 						</a>
-						<!-- <ul class="dropdown-menu">
-							<li><a class="dropdown-item  " href="#" style="font-size: 1.15rem; ">Dashbaord</a></li>
-							<li><a class="dropdown-item  " href="#" style="font-size: 1.15rem;">Website</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item  " style="font-size: 1.15rem;;" href="#">Figma Design</a></li>
 
-						</ul> -->
 					</li>
 					<li class="nav-item">
 						<a class="nav-link  " aria-current="page" href="#reviewer"
@@ -230,10 +359,28 @@
 
 				<div class="portfolio__img ">
 					<div class="buble-container">
-						<img src="./src/images/about-me.jpg" class="about-me__profile " alt="about me profile picture"
+						<img src="./src/images/about-me.jpg" class="about-me__profile w-100" alt="about me profile picture "
 							style="width:100%; " data-aos="fade-up">
 
 						<!-- Bubbles -->
+						<!-- <div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div> -->
+						<!-- <div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div>
+						<div class="buble"></div> -->
+						<!-- <div class="buble"></div>
 						<div class="buble"></div>
 						<div class="buble"></div>
 						<div class="buble"></div>
@@ -251,25 +398,7 @@
 						<div class="buble"></div>
 						<div class="buble"></div>
 						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
-						<div class="buble"></div>
+						<div class="buble"></div> -->
 					</div>
 
 
@@ -355,93 +484,87 @@
 	<!-- About me end -->
 
 	<!-- Books and CD -->
-	<section class="fh5co-books  " id="portfolio">
-		<div class="site-container   ">
-			<h2 class="universal-h2 universal-h2-bckg " data-aos="fade-up">Portfolio</h2>
-			<div class="books  d-flex align-items-center  justify-content-center px-md-5 ">
-				<div class="single-book  px-md-2">
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
+    
+    <div class="row g-2  justify-content-center">
+      
+      <!-- CARD 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/kiadmin.png" alt="Kiadmin Project" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Kiadmin Project</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
-					<a href="./projects/Solar System/ind.html" class="single-book__img shadow-lg" target="_blank">
+      <!-- CARD 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/figma design/figma design.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/figma design.png" alt="Figma Design" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Figma Design</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
+      <!-- CARD 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/Sana Sattar portfolio/portfolio/index.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/port.png" alt="Personal Portfolio" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Personal Portfolio</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
-						<img src="./src/images/dash3.png" alt="single book and cd" data-aos="fade-up">
-						<div class="single-book_download">
+      <!-- CARD 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/Edgecut website/index.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/edgcut website.jpg" alt="Edgecut Website" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Edgecut Website</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
+      <!-- CARD 5 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/Solar System/ind.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/dash3.png" alt="Solar System" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Solar System Project</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
+      <!-- CARD 6 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <a href="./projects/figma design 2/index.html" target="_blank" class="card-link w-100">
+          <div class="card-container">
+            <img src="./src/images/jamel full stack developer.png" alt="Figma Design 2" class="card-image">
+            <div class="card-overlay">
+              <h5 class="m-0">Figma Design 2</h5>
+            </div>
+          </div>
+        </a>
+      </div>
 
-							<img src="./src/images/download.svg" alt="dwonlaod image">
-
-						</div>
-					</a>
-
-					<span class="single-book__price">Solar System</span>
-
-				</div>
-
-				<div class="single-book px-md-2  ">
-					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html"
-						class="single-book__img shadow-lg" target="_blank">
-						<img src="./src/images/kiadmin.png" alt="single book and cd" data-aos="fade-up">
-						<div class="single-book_download">
-
-
-
-							<img src="./src/images/download.svg" alt="book image">
-						</div>
-					</a>
-					<!-- <h4 class="single-book__title">Kiadmin Dashbaord</h4> -->
-					<span class="single-book__price"> Kiadmin Dashbaord</span>
-
-				</div>
-				<div class="single-book  px-md-2  ">
-					<a href="./projects/Sana Sattar portfolio/portfolio/index.html" class="single-book__img shadow-lg"
-						target="_blank">
-						<img src="./src/images/port.png" alt="single book and cd" data-aos="fade-up">
-						<div class="single-book_download">
-							<img src="./src/images/download.svg" alt="dwonlaod image">
-						</div>
-					</a>
-
-					<span class="single-book__price">Personal Portfolio</span>
-
-				</div>
-				<div class="single-book px-md-2  ">
-					<a href="./projects/figma design 2/index.html" class="single-book__img shadow-lg" target="_blank">
-						<img src="./src/images/jamel full stack developer.png" alt="single book and cd"
-							data-aos="fade-up">
-						<div class="single-book_download">
-							<img src="./src/images/download.svg" alt="dwonlaod image">
-						</div>
-					</a>
-
-					<span class="single-book__price">Figma Design</span>
-
-				</div>
-				<div class="single-book px-md-2  ">
-					<a href="./projects/figma design/figma design.html" class="single-book__img shadow-lg"
-						target="_blank">
-						<img src="./src/images/figma design.png" alt="single book and cd" data-aos="fade-up">
-						<div class="single-book_download">
-							<img src="./src/images/download.svg" alt="book image">
-						</div>
-					</a>
-					<!-- <h4 class="single-book__title">Figma Template</h4> -->
-					<span class="single-book__price"> Figma Template</span>
-				</div>
-				<div class="single-book px-md-2  ">
-					<a href="./projects/Edgecut website/index.html" class="single-book__img shadow-lg" target="_blank">
-						<img src="./src/images/edgcut website.jpg" alt="single book and cd" data-aos="fade-up">
-						<div class="single-book_download">
-							<img src="./src/images/download.svg" alt="book image">
-						</div>
-					</a>
-					<!-- <h4 class="single-book__title">Edgecut Website</h4> -->
-					<span class="single-book__price"> Edgecute Website</span>
-				</div>
-			</div>
-
-		</div>
-	</section>
+    </div>
+  </div>
+</section>
 
 	<section class="fh5co-quotes  " id="reviewer" data-aos="fade-up">
 		<div class="site-container">
@@ -496,7 +619,7 @@
 			</div>
 		</div>
 	</section>
-	<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top" class="px-3 shadow-sm" >↑</button>
+	<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top" class="px-3 shadow-sm">↑</button>
 	<!-- Social -->
 
 	<!-- Footer -->
@@ -572,9 +695,10 @@
 </div> -->
 
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j"></script> -->
 
 	<script>
+
 		// Scrollspy Active Class Fix
 		const navLinks = document.querySelectorAll('.nav-link');
 		window.addEventListener('scroll', () => {
@@ -605,25 +729,25 @@
 			}
 		});
 		// Show the button when the user scrolls down
-window.onscroll = function() {
-  const btn = document.getElementById("scrollTopBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
+		window.onscroll = function () {
+			const btn = document.getElementById("scrollTopBtn");
+			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				btn.style.display = "block";
+			} else {
+				btn.style.display = "none";
+			}
+		};
 
-// Scroll to top smoothly
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
+		// Scroll to top smoothly
+		function scrollToTop() {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		}
 
 	</script>
-
+	<script src="./projects/dashboard-design-made-by-Sana-Sattar/bootsrap/javascript.js"></script>
 	<script src="./src/js/jquery.min.js"></script>
 	<script src="./src/js/slick.min.js"></script>
 	<script src="./src/js/main.js"></script>
