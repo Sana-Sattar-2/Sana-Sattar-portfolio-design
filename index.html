@@ -14,198 +14,45 @@
 	<title>Sana Professional</title>
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="./figma design 2/css folder/cssfile.css"> -->
 	<style>
-		html {
-			scroll-behavior: smooth;
+		* {
+			box-sizing: border-box;
 		}
 
-		.nav-link {
-			position: relative;
-			color: #bebdbd;
-		}
-
-		.nav-item:active {
-			color: aliceblue !important;
-		}
-
-		.nav-link:hover {
-			color: #fffefe !important;
-		}
-
-		/* .nav-link::after {
-			content: '';
-			position: absolute;
-			width: 0;
-			height: 2px;
-			left: 0;
-			bottom: 0;
-			background-color: #cfcfcf;
-			transition: 0.3s;
-			color: rgb(214, 212, 212) !important;
-		} */
-
-		.nav-link:hover::after {
-			width: 100%;
-			color: rgb(212, 206, 206) !important;
-		}
-
-		.navbar .nav-link.active {
-			color: white !important;
-		}
-
-		.navbar .nav-link:hover {
-			color: #f8f9fa;
-			/* Bootstrap's light color */
-		}
-
-		#scrollTopBtn {
-			position: fixed;
-			bottom: 30px;
-			right: 30px;
-			z-index: 99;
-			font-size: 18px;
-			background-color: #333;
-			color: white;
-			border: none;
-			padding: 10px 15px;
-			border-radius: 50%;
-			cursor: pointer;
-			display: none;
-			box-shadow: 10px 10px 1px white;
-		}
-
-		#scrollTopBtn:hover {
-			background-color: #555;
-			box-shadow: 10px 10px 1px white;
-		}
-
-		.hover-wrapper {
-			position: relative;
-			overflow: hidden;
-		}
-
-		.hover-text {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-			/* semi-transparent black */
-			color: white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			transition: opacity 0.5s ease;
-			font-size: 1.2rem;
-			font-weight: bold;
-			text-align: center;
-		}
-
-		.hover-wrapper:hover .hover-text {
-			opacity: 5;
-		}
-
-		.card-link {
-			text-decoration: none;
+		body {
+			overflow-x: hidden;
 		}
 
 		.card-container {
 			position: relative;
-			width: 300px;
-			height: 200px;
 			overflow: hidden;
-			border-radius: 10px;
-			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-			transition: transform 0.3s ease;
-		}
-
-		.card-container:hover {
-			transform: scale(1.02);
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 		}
 
 		.card-image {
 			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			height: auto;
 			display: block;
+			object-fit: cover;
 		}
 
 		.card-overlay {
 			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
 			bottom: 0;
 			background: rgba(0, 0, 0, 0.6);
-			/* semi-transparent */
-			color: white;
-			font-size: 1.1rem;
-			font-weight: bold;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			transition: opacity 0.3s ease;
-			text-align: center;
+			color: #fff;
+			width: 100%;
 			padding: 10px;
+			text-align: center;
 		}
 
-		.card-container:hover .card-overlay {
-			opacity: 1;
+		.container {
+			max-width: 100%;
+			padding: 0 15px;
 		}
-		.card-link {
-  text-decoration: none;
-  display: block;
-}
-
-.card-container {
-  position: relative;
-  width: 100%;
-  padding-top: 66.66%; /* 3:2 aspect ratio */
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.card-container:hover {
-  transform: scale(1.03);
-}
-
-.card-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  padding: 10px;
-}
-
-.card-container:hover .card-overlay {
-  opacity: 1;
-}
-
 	</style>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
@@ -359,10 +206,10 @@
 
 				<div class="portfolio__img ">
 					<div class="buble-container">
-						<img src="./src/images/about-me.jpg" class="about-me__profile w-100" alt="about me profile picture "
-							style="width:100%; " data-aos="fade-up">
+						<img src="./src/images/about-me.jpg" class="about-me__profile w-100"
+							alt="about me profile picture " style="width:100%; " data-aos="fade-up">
 
-					
+
 					</div>
 
 
@@ -448,87 +295,81 @@
 	<!-- About me end -->
 
 	<!-- Books and CD -->
-<section id="portfolio" class="py-5">
-  <div class="container">
-    <h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
-    
-    <div class="row g-2  justify-content-center">
-      
-      <!-- CARD 1 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/kiadmin.png" alt="Kiadmin Project" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Kiadmin Project</h5>
-            </div>
-          </div>
-        </a>
-      </div>
+	<section id="portfolio p-lg-5" class="py-5">
+		<div class="container p-lg-5">
+			<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
 
-      <!-- CARD 2 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/figma design/figma design.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/figma design.png" alt="Figma Design" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Figma Design</h5>
-            </div>
-          </div>
-        </a>
-      </div>
+			<div class="row g-2 justify-content-center p-lg-5">
 
-      <!-- CARD 3 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/Sana Sattar portfolio/portfolio/index.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/port.png" alt="Personal Portfolio" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Personal Portfolio</h5>
-            </div>
-          </div>
-        </a>
-      </div>
+				<!-- CARD TEMPLATE -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
+					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" target="_blank" class="card-link w-100 shadow-lg">
+						<div class="card-container">
+							<img src="./src/images/kiadmin.png" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">kiadmin Dashbord 
+				
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
+					<a href="./projects/Edgecut website/index.html" target="_blank" class="card-link w-100 shadow-lg">
+						<div class="card-container">
+							<img src="./src/images/edgcut website.jpg" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">Edgecut Website</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+					<a href="./projects/Sana Sattar portfolio/portfolio/index.html" target="_blank" class="card-link w-100 shadow-lg">
+						<div class="card-container">
+							<img src="./src/images/port.png" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">Personal Portfolio</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+					<a href="./projects/figma design/figma design.html" target="_blank" class="card-link w-100 shadow-lg" >
+						<div class="card-container">
+							<img src="./src/images/figma design.png" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">Figma Project</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+					<a href="./projects/Solar System/ind.html" target="_blank" class="card-link w-100 shadow-lg">
+						<div class="card-container">
+							<img src="./src/images/dash3.png" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">Solar System Project</h5>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+					<a href="./projects/figma design 2/index.html" target="_blank" class="card-link w-100 shadow-lg">
+						<div class="card-container">
+							<img src="./src/images/jamel full stack developer.png" alt="Project Image" class="card-image">
+							<div class="card-overlay">
+								<h5 class="m-0">Figma Project</h5>
+							</div>
+						</div>
+					</a>
+				</div>
 
-      <!-- CARD 4 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/Edgecut website/index.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/edgcut website.jpg" alt="Edgecut Website" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Edgecut Website</h5>
-            </div>
-          </div>
-        </a>
-      </div>
+				<!-- Repeat for other cards -->
+				<!-- You can paste your 5 remaining cards here using same format -->
 
-      <!-- CARD 5 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/Solar System/ind.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/dash3.png" alt="Solar System" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Solar System Project</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- CARD 6 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-        <a href="./projects/figma design 2/index.html" target="_blank" class="card-link w-100">
-          <div class="card-container">
-            <img src="./src/images/jamel full stack developer.png" alt="Figma Design 2" class="card-image">
-            <div class="card-overlay">
-              <h5 class="m-0">Figma Design 2</h5>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
+			</div>
+		</div>
+	</section>
 
 	<section class="fh5co-quotes  " id="reviewer" data-aos="fade-up">
 		<div class="site-container">
@@ -569,10 +410,12 @@
 				<div class="social-icons">
 					<a href="#" target="_blank">
 						<img src="./src/images/social-twitter.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./src/images/social-pinterest.png" alt="social icon">
+					<a href="https://github.com/Sana-Sattar-2" target="_blank"><img
+							src="./src/images/social-pinterest.png" alt="social icon">
 
 					</a>
-					<a href="#" target="_blank">
+					<a href="https://www.youtube.com/channel/UCNEvYyniCsJxEJrpvB6vdBA/community?pvf=CAI%253D"
+						target="_blank">
 						<img src="./src/images/social-youtube.png" alt="social icon">
 					</a>
 					<a href="#" target="_blank">
@@ -602,10 +445,10 @@
 						<div class="social-icons">
 							<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
 									alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./src/images/social-pinterest.png"
-									alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./src/images/social-youtube.png"
-									alt="social icon"></a>
+							<a href="https://github.com/Sana-Sattar-2" target="_blank"><img
+									src="./src/images/social-pinterest.png" alt="social icon"></a>
+							<a href="https://www.youtube.com/channel/UCNEvYyniCsJxEJrpvB6vdBA/community?pvf=CAI%253D"
+								target="_blank"><img src="./src/images/social-youtube.png" alt="social icon"></a>
 							<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
 									alt="social icon"></a>
 						</div>
@@ -621,6 +464,15 @@
 						<textarea></textarea>
 						<input type="submit" name="submit" value="Submit" class="submit-button">
 					</form>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"> <iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13884.254033096988!2d71.62217282229662!3d29.543644764282128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9f002a616af5%3A0xb1f86244155ba226!2sLodhran!5e0!3m2!1sen!2s!4v1749139845682!5m2!1sen!2s"
+							width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 				</div>
 			</div>
 		</div>
@@ -642,24 +494,15 @@
 		</div>
 
 	</footer>
+	<a href="whatsapp://send?text=Hello Shining starts! I am Sana Sattar , a Front-end-Developer&phone=+92367610382"
+		class="whatsapp-float" target="_blank">
+		<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+	</a>
 
 
-	<!-- <div class="bubble-zone">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-  </div> -->
-	<!-- Footer end -->
-
-	<!-- Scripts -->
-	<!-- <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
-</div> -->
 
 
-	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j"></script> -->
+
 
 	<script>
 
