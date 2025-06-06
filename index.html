@@ -15,12 +15,45 @@
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	
+<style>/* Base nav-link color */
+.navbar .nav-link {
+  color: #bebdbd; /* Light grey */
+  transition: color 0.3s ease;
+  position: relative;
+}
 
+/* Hover state */
+.navbar .nav-link:hover {
+  color: #f8f9fa !important; /* Slightly brighter white */
+}
+
+/* Active link - fully white and bold */
+.navbar .nav-link.active {
+  color: #ffffff !important; /* Pure white */
+  font-weight: bold;
+}
+
+/* Underline animation on hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #cfcfcf;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
 	<!-- Navbar -->
-	<nav id="navbar" class="navbar navbar-expand-lg   fixed-top   bg-dark ">
+	<nav id="navbar" class="navbar navbar-expand-lg   fixed-top   bg-dark px-5">
 		<div class="container">
 			<a class="navbar-brand" href="./src/images/site-logo.png" class="">
 				<img src="./src/images/site-logo.png" alt="" style="width: 70px;">

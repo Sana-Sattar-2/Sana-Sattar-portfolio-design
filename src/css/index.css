@@ -285,19 +285,7 @@
 			color: rgb(214, 212, 212) !important;
 		} */
 
-		.nav-link:hover::after {
-			width: 100%;
-			color: rgb(212, 206, 206) !important;
-		}
 
-		.navbar .nav-link.active {
-			color: white !important;
-		}
-
-		.navbar .nav-link:hover {
-			color: #f8f9fa;
-			/* Bootstrap's light color */
-		}
 
 		#scrollTopBtn {
 			position: fixed;
@@ -438,3 +426,14 @@
 			max-width: 100%;
 			padding: 0 15px;
 		}
+	
+
+		
+
+	
+
+
+
+
+
+
