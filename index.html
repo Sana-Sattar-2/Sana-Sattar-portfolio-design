@@ -16,37 +16,10 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	
 <style>/* Base nav-link color */
-.navbar .nav-link {
-  color: #bebdbd; /* Light grey */
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-/* Hover state */
-.navbar .nav-link:hover {
-  color: #f8f9fa !important; /* Slightly brighter white */
-}
-
 /* Active link - fully white and bold */
 .navbar .nav-link.active {
   color: #ffffff !important; /* Pure white */
   font-weight: bold;
-}
-
-/* Underline animation on hover */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: #cfcfcf;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
 }
 </style>
 </head>
@@ -292,7 +265,7 @@
 
 	<!-- Books and CD -->
 	<section id="portfolio p-lg-5" class="py-5">
-		<div class="container p-lg-5">
+		<div class="container p-lg-5" id="portfolio">
 			<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
 
 			<div class="row g-2 justify-content-center p-lg-5">
