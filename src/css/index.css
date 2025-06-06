@@ -425,39 +425,3 @@
 	
 
 		
-.navbar .nav-link {
-  color: #bebdbd; /* Light grey */
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-/* Hover state */
-.navbar .nav-link:hover {
-  color: #f8f9fa !important; /* Slightly brighter white */
-}
-
-
-
-/* Underline animation on hover */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: #cfcfcf !important;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-	
-
-
-
-
-
-

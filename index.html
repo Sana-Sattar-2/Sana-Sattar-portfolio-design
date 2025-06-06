@@ -14,19 +14,46 @@
 	<title>Sana Professional</title>
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	
-<style>/* Base nav-link color */
-/* Active link - fully white and bold */
-.navbar .nav-link.active {
-  color: #ffffff !important; /* Pure white */
+	<style>
+  /* Sab nav-link default grey ho */
+.navbar-nav .nav-link {
+  color: #bebdbd !important;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
   font-weight: bold;
 }
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #cfcfcf !important;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
 </style>
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100" tabindex="0">
 	<!-- Navbar -->
-	<nav id="navbar" class="navbar navbar-expand-lg   fixed-top   bg-dark px-5">
+	<nav id="navbar" class="navbar navbar-expand-lg   fixed-top   bg-dark px-md-5">
 		<div class="container">
 			<a class="navbar-brand" href="./src/images/site-logo.png" class="">
 				<img src="./src/images/site-logo.png" alt="" style="width: 70px;">
@@ -39,11 +66,11 @@
 			<div class="collapse navbar-collapse   " id="navbarNav">
 				<ul class="navbar-nav ms-auto  mb-lg-0 gap-4">
 					<li class="nav-item">
-						<a class="nav-link   active   " aria-current="page" href="#home"
+						<a class="nav-link      " aria-current="page" href="#home"
 							style="font-size: 1.15rem; font-family: Arial, Helvetica, sans-serif;">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  " href="#about" style="font-size: 1.15rem; ">About</a>
+						<a class="nav-link " href="#about" style="font-size: 1.15rem; ">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link   " aria-current="page" href="#skills"
@@ -264,8 +291,9 @@
 	<!-- About me end -->
 
 	<!-- Books and CD -->
-	<section id="portfolio p-lg-5" class="py-5">
-		<div class="container p-lg-5" id="portfolio">
+	 <section id="portfolio">
+	<div id=" p-lg-5" class="py-5">
+		<div class="container p-lg-5" >
 			<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
 
 			<div class="row g-2 justify-content-center p-lg-5">
@@ -338,9 +366,9 @@
 
 			</div>
 		</div>
-	</section>
-
-	<section class="fh5co-quotes  " id="reviewer" data-aos="fade-up">
+	</div></section>
+<section id="reviewer">
+	<div class="fh5co-quotes  " data-aos="fade-up">
 		<div class="site-container">
 			<div class="about-me-slider  " data-aos="fade-up">
 				<div>
@@ -368,11 +396,11 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div></section>
 	<!-- Quotes end -->
 
 	<!-- Social -->
-	<section class="fh5co-social" id="contact">
+	<section class="fh5co-social" >
 		<div class="site-container">
 			<div class="social">
 				<h5>Follow me!!</h5>
@@ -399,7 +427,8 @@
 	<!-- Social -->
 
 	<!-- Footer -->
-	<footer class="site-footer">
+	<section id="contact">
+	<footer class="site-footer" >
 		<div class="site-container">
 			<div class="footer-inner">
 				<div class="footer-info">
@@ -462,11 +491,44 @@
 				</div> -->
 		</div>
 
-	</footer>
+	</footer></section>
 	<a href="whatsapp://send?text=Hello Shining starts! I am Sana Sattar , a Front-end-Developer&phone=+92367610382"
 		class="whatsapp-float" target="_blank">
 		<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 	</a>
+<script>
+  const sections = document.querySelectorAll("section");
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+  // Click event for manual active link (already good)
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+
+  // ScrollSpy: auto set active nav-link on scroll
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
 
 
 
