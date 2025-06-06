@@ -423,5 +423,19 @@
 			padding: 0 15px;
 		}
 	
+  iframe {
+    height: 500px;
+  }
 
+  @media (max-width: 768px) {
+    iframe {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    iframe {
+      height: 250px;
+    }
+  }
 		
