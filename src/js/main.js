@@ -36,7 +36,25 @@ $(document).ready(function() {
 	});
 	
 });
+	  const skillSection = document.getElementById('skills');
+  const progressBars = document.querySelectorAll('.progress-bar');
+  let animated = false;
 
+  function animateProgressBars() {
+    const sectionTop = skillSection.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (sectionTop < screenHeight - 100 && !animated) {
+      progressBars.forEach(bar => {
+        const target = bar.getAttribute('data-progress');
+        bar.style.width = target + '%';
+      });
+      animated = true; // prevent repeat
+    }
+  }
+
+  window.addEventListener('scroll', animateProgressBars);
+  window.addEventListener('load', animateProgressBars);
 
 
 var counta = 0;

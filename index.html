@@ -13,45 +13,188 @@
 	<link rel="stylesheet" href="src/css/index.css">
 	<title>
 
-		
+
 		Sana Folio</title>
-	
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		 <link  rel="shortcut icon" type="image/png" href="./src/favicon-32x32.png"  sizes="32x32">
+	<link rel="shortcut icon" type="image/png" href="./src/favicon-32x32.png" sizes="32x32">
 	<style>
-  /* Sab nav-link default grey ho */
-.navbar-nav .nav-link {
-  color: #bebdbd !important;
-  transition: color 0.3s ease;
-  position: relative;
-}
+		/* Sab nav-link default grey ho */
+		.navbar-nav .nav-link {
+			color: #bebdbd !important;
+			transition: color 0.3s ease;
+			position: relative;
+		}
 
-.navbar-nav .nav-link.active {
-  color: #ffffff !important;
-  font-weight: bold;
-}
+		.navbar-nav .nav-link.active {
+			color: #ffffff !important;
+			font-weight: bold;
+		}
 
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa !important;
-}
+		.navbar-nav .nav-link:hover {
+			color: #f8f9fa !important;
+		}
 
-.navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: #cfcfcf !important;
-  transition: width 0.3s ease;
-}
+		.navbar-nav .nav-link::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			left: 0;
+			bottom: 0;
+			background-color: #cfcfcf !important;
+			transition: width 0.3s ease;
+		}
 
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
-}
+		.navbar-nav .nav-link:hover::after {
+			width: 100%;
+		}
 
-</style>
+
+		.service-icon {
+			position: relative;
+			width: 70px;
+			height: 70px;
+			margin: 0 auto 20px auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			color: #da9e46;
+			z-index: 2;
+		}
+
+		.service-icon::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border: 3px solid #d8a850;
+			border-radius: 50%;
+			z-index: -1;
+			transition: transform 0.6s ease;
+		}
+
+		.service-card:hover .service-icon::before {
+			animation: rotateRing 1s linear infinite;
+		}
+
+		@keyframes rotateRing {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		body {
+			background-color: #f5f5f5;
+			font-family: 'Segoe UI', sans-serif;
+		}
+
+		.services-section {
+			padding: 80px 0;
+			text-align: center;
+		}
+
+		.service-card {
+			background: white;
+			border-radius: 15px;
+			padding: 30px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			opacity: 1;
+			transform: translateY(0px);
+		}
+
+		.service-card.active {
+			opacity: 1;
+			transform: translateY(0);
+			
+		}
+.service-card:hover{
+	cursor: pointer;
+	background-color: rgb(65, 63, 63);
+	color: #f8f9fa;
+}
+		/* Ring that will be added dynamically */
+		.icon-ring {
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			border: 3px solid #a77b28;
+			z-index: 4;
+			animation: ringRotate 1s linear infinite;
+			top: 0;
+			left: 0;
+			box-shadow: 0 0 10px #a77b28;
+			pointer-events: none;
+			opacity: 2;
+		}
+
+		@keyframes ringRotate {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+
+		.service-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+		}
+
+		.service-icon {
+			font-size: 40px;
+			color: #a77b28;
+			margin-bottom: 20px;
+		}
+
+		.service-title {
+			font-size: 1.5rem;
+			margin-bottom: 15px;
+			font-weight: 600;
+		}
+
+		.service-desc {
+			color: #bbb3b3;
+		}
+		  .skills-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .progress {
+      height: 25px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .progress-bar {
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: width 2s ease-in-out;
+    }
+
+    .skill-label {
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+		.f{
+			background-color: #e4c48a;
+		}
+	</style>
 
 
 </head>
@@ -77,6 +220,9 @@
 					<li class="nav-item">
 						<a class="nav-link " href="#about" style="font-size: 1.15rem; ">About</a>
 					</li>
+						<li class="nav-item">
+						<a class="nav-link " href="#services" style="font-size: 1.15rem; ">Services</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link   " aria-current="page" href="#skills"
 							style="font-size: 1.15rem; ">Skills</a>
@@ -90,7 +236,7 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link  " aria-current="page" href="#reviewer"
-							style="font-size: 1.15rem; ">Reviewers</a>
+							style="font-size: 1.15rem; ">Testimonials</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link   " aria-current="page" href="#contact"
@@ -178,8 +324,8 @@
 					Design and different Website</p>
 				<!-- <a href="./src/cv.png" class="brand-button" style="font-size: 20px; line-height: 30px;" download="true">Resume </a> -->
 				<div class="btn-container">
-					<a href="./src/cv.png" style="font-size: 20px; line-height: 30px;" downloade="true" download> <button
-							class="star-btn">Resume </button></a>
+					<a href="./src/cv.png" style="font-size: 20px; line-height: 30px;" downloade="true" download>
+						<button class="star-btn">Resume </button></a>
 					<div class="stars">
 						<span></span>
 						<span></span>
@@ -261,7 +407,7 @@
 
 	<!-- SKILLS part start -->
 
-	<section class="con " id="skills"
+	<!-- <section class="con " id="skills"
 		style="display: flex; align-items: center;justify-content: center; margin-top: 50px; margin-bottom: 150px;">
 		<div class="container "
 			style="width: 100%; display: flex; align-items: center; justify-content: center; flex-direction:column;">
@@ -275,11 +421,7 @@
 
 				<img src="./src/images/blog1.jpg" alt="" style="width: 150px;" id="bayName">
 				<img src="./src/images/blog2.jpg" alt="" style="width: 150px;" id="bayName">
-				<!-- <div class="progress bg-info">
-	<div class="progress-bar bg-danger" >
-
-	</div>
-</div> -->
+	
 
 
 				<img src="./src/images/blog3.jpg" alt="" style="width: 150px;" id="bayName">
@@ -290,122 +432,214 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
+	<section class="services-section" id="services">
+		<div class="container">
+			<h2 class="universal-h2 universal-h2-bckg mb-5" style="padding-top: 50px;"> Services</h2>
+			<div class="row  justify-content-center">
 
-	<!-- skills part end -->
+				<!-- Front-End Developer Card -->
+				<div class="col-md-6 col-lg-3  mt-3">
+					<div class="service-card p-4 h-100 ">
+						<div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+						<div class="service-title">Website Designer</div>
+						<p class="service-desc">I build responsive and interactive websites using HTML, CSS, JavaScript,
+							and modern frameworks.</p>
+					</div>
+				</div>
+
+				<!-- Figma to Code Card -->
+				<div class="col-md-6 col-lg-3 mt-3">
+					<div class="service-card p-4 h-100">
+						<div class="service-icon position-relative">
+							<i class="fas fa-laptop-code"></i>
+						</div>
+
+						<div class="service-title">Figma to Code</div>
+						<p class="service-desc">I convert beautiful Figma designs into clean, responsive, and
+							pixel-perfect code.</p>
+					</div>
+				</div>
+
+				<!-- Content Writer Card -->
+				<div class="col-md-6 col-lg-3 mt-3">
+					<div class="service-card p-4 h-100">
+						<div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+						<div class="service-title">Content Writer</div>
+						<p class="service-desc">I craft compelling content for websites, blogs, and digital marketing
+							with SEO focus.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+<section class="skills-section" id="skills">
+  <div class="container">
+	<h2 class="universal-h2 universal-h2-bckg mb-5" style="padding-top: 50px;"> Skills & 
+		Experience</h2>
+
+    <div class="row gy-4 d-flex  align-items-center  justify-content-center mt-5">
+
+      <div class="col-md-5">
+   <h6  class="fw-bold">HTML</h6>
+        <div class="progress">
+          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="95">HTML - 95%</div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+       
+       <h6  class="fw-bold">CSS</h6>
+        <div class="progress">
+          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="90">CSS - 90%</div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+      <h6 class="fw-bold">Bootstrap</h6>
+        <div class="progress">
+          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="85">Bootstrap - 85%</div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+     <h6 class="fw-bold">JavaScript</h6>
+        <div class="progress">
+          <div class="progress-bar  f progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="80">JavaScript - 80%</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 	<!-- About me end -->
 
 	<!-- Books and CD -->
-	 <section id="portfolio">
-	<div id=" p-lg-5" class="py-5">
-		<div class="container p-lg-5" >
-			<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
+	<section id="portfolio">
+		<div id=" p-lg-5" class="py-5">
+			<div class="container p-lg-5">
+				<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
 
-			<div class="row g-2 justify-content-center p-lg-5">
+				<div class="row g-2 justify-content-center p-lg-5">
 
-				<!-- CARD TEMPLATE -->
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
-					<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" target="_blank" class="card-link w-100 shadow-lg">
-						<div class="card-container">
-							<img src="./src/images/kiadmin.png" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<p class="m-0 " style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">Kiadmin Dashbord  . This Dashbord is responsive for all the devices. 
-				</p>
+					<!-- CARD TEMPLATE -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
+						<a href="./projects/dashboard-design-made-by-Sana-Sattar/index1.html" target="_blank"
+							class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/kiadmin.png" alt="Project Image" class="card-image">
+								<div class="card-overlay">
+									<p class="m-0 "
+										style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">Kiadmin
+										Dashbord . This Dashbord is responsive for all the devices.
+									</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
-					<a href="./projects/Edgecut website/index.html" target="_blank" class="card-link w-100 shadow-lg">
-						<div class="card-container">
-							<img src="./src/images/edgcut website.jpg" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<p class="m-0" style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">Edgecut Website , this website is responsive for all the devices .</h5>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
+						<a href="./projects/Edgecut website/index.html" target="_blank"
+							class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/edgcut website.jpg" alt="Project Image" class="card-image">
+								<div class="card-overlay">
+									<p class="m-0" style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">
+										Edgecut Website , this website is responsive for all the devices .</h5>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
-					<a href="./projects/Sana Sattar portfolio/portfolio/index.html" target="_blank" class="card-link w-100 shadow-lg">
-						<div class="card-container">
-							<img src="./src/images/port.png" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<h5 class="m-0" style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">Personal Portfolio.This portfolio also responsive for all devices.</h5>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+						<a href="./projects/Sana Sattar portfolio/portfolio/index.html" target="_blank"
+							class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/port.png" alt="Project Image" class="card-image">
+								<div class="card-overlay">
+									<h5 class="m-0"
+										style="font-size:1.25rem;font-family: Arial, Helvetica, sans-serif;">Personal
+										Portfolio.This portfolio also responsive for all devices.</h5>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
-					<a href="./projects/figma design/figma design.html" target="_blank" class="card-link w-100 shadow-lg" >
-						<div class="card-container">
-							<img src="./src/images/figma design.png" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<h5 class="m-0">Figma Project</h5>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+						<a href="./projects/figma design/figma design.html" target="_blank"
+							class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/figma design.png" alt="Project Image" class="card-image">
+								<div class="card-overlay">
+									<h5 class="m-0">Figma Project</h5>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
-					<a href="./projects/Solar System/ind.html" target="_blank" class="card-link w-100 shadow-lg">
-						<div class="card-container">
-							<img src="./src/images/dash3.png" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<h5 class="m-0">Solar System Project</h5>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+						<a href="./projects/Solar System/ind.html" target="_blank" class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/dash3.png" alt="Project Image" class="card-image">
+								<div class="card-overlay">
+									<h5 class="m-0">Solar System Project</h5>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
-					<a href="./projects/figma design 2/index.html" target="_blank" class="card-link w-100 shadow-lg">
-						<div class="card-container">
-							<img src="./src/images/jamel full stack developer.png" alt="Project Image" class="card-image">
-							<div class="card-overlay">
-								<h5 class="m-0">Figma Project</h5>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
+						<a href="./projects/figma design 2/index.html" target="_blank"
+							class="card-link w-100 shadow-lg">
+							<div class="card-container">
+								<img src="./src/images/jamel full stack developer.png" alt="Project Image"
+									class="card-image">
+								<div class="card-overlay">
+									<h5 class="m-0">Figma Project</h5>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
+						</a>
+					</div>
 
-				<!-- Repeat for other cards -->
-				<!-- You can paste your 5 remaining cards here using same format -->
+					<!-- Repeat for other cards -->
+					<!-- You can paste your 5 remaining cards here using same format -->
 
-			</div>
-		</div>
-	</div></section>
-<section id="reviewer">
-	<div class="fh5co-quotes  " data-aos="fade-up">
-		<div class="site-container">
-			<div class="about-me-slider  " data-aos="fade-up">
-				<div>
-					<h2 class="universal-h2 universal-h2-bckg">What Students Are Saying</h2>
-					<p style="font-size: 17px; line-height: 30px;">“ The website design is modern and visually
-						appealing. The color scheme is consistent and
-						easy on the eyes.
-						I love the layout of the website. It's easy to navigate and find what I'm looking for.
-						The website design could benefit from more whitespace to make it feel less cluttered.”</p>
-					<img src="./src/images/quotes.svg" alt="quotes svg">
-					<h4>Anabiyaa Shehbaz</h4>
-					<p>Reader</p>
-				</div>
-				<div>
-					<h2 class="universal-h2 universal-h2-bckg">What Students Are Saying </h2>
-					<p style="font-size: 17px; line-height: 30px;">“I'm blown away by the quality of your
-						work!
-						Your attention to detail and coding expertise have exceeded my expectations. The
-						final
-						product is user-friendly, visually appealing, and functions flawlessly. Thanks for
-						delivering an outstanding experience!”</p>
-					<img src="./src/images/quotes.svg" alt="quotes svg">
-					<h4>Irzaa Shehbaz</h4>
-					<p>Reader</p>
 				</div>
 			</div>
 		</div>
-	</div></section>
+	</section>
+	<section id="reviewer">
+		<div class="fh5co-quotes  " data-aos="fade-up">
+			<div class="site-container">
+				<div class="about-me-slider  " data-aos="fade-up">
+					<div>
+						<h2 class="universal-h2 universal-h2-bckg">Testimonials</h2>
+						<p style="font-size: 17px; line-height: 30px;">“ The website design is modern and visually
+							appealing. The color scheme is consistent and
+							easy on the eyes.
+							I love the layout of the website. It's easy to navigate and find what I'm looking for.
+							The website design could benefit from more whitespace to make it feel less cluttered.”</p>
+						<img src="./src/images/quotes.svg" alt="quotes svg">
+						<h4>Anabiyaa Shehbaz</h4>
+						<p> Front-end-Developer</p>
+					</div>
+					<div>
+						<h2 class="universal-h2 universal-h2-bckg">Testimonials </h2>
+						<p style="font-size: 17px; line-height: 30px;">“I'm blown away by the quality of your
+							work!
+							Your attention to detail and coding expertise have exceeded my expectations. The
+							final
+							product is user-friendly, visually appealing, and functions flawlessly. Thanks for
+							delivering an outstanding experience!”</p>
+						<img src="./src/images/quotes.svg" alt="quotes svg">
+						<h4>Irzaa Shehbaz</h4>
+						<p>Full  Stack Developer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Quotes end -->
 
 	<!-- Social -->
-	<section class="fh5co-social" >
+	<section class="fh5co-social">
 		<div class="site-container">
 			<div class="social">
 				<h5>Follow me!!</h5>
@@ -433,116 +667,142 @@
 
 	<!-- Footer -->
 	<section id="contact">
-	<footer class="site-footer" >
-		<div class="site-container">
-			<div class="footer-inner">
-				<div class="footer-info">
-					<div class="footer-info__left">
-						<img src="./src/images/footer.jpg" alt="about me image">
-						<p>Read more about me</p>
-					</div>
-					<div class="footer-info__right">
-						<h5>Get In Touch</h5>
-						<p class="footer-phone">Phone: +3367610382</p>
-						<p>Email : sanasattar057@gmail.com</p>
-						<div class="social-icons">
-							<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
-									alt="social icon"></a>
-							<a href="https://github.com/Sana-Sattar-2" target="_blank"><img
-									src="./src/images/social-pinterest.png" alt="social icon"></a>
-							<a href="https://www.youtube.com/channel/UCNEvYyniCsJxEJrpvB6vdBA/community?pvf=CAI%253D"
-								target="_blank"><img src="./src/images/social-youtube.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
-									alt="social icon"></a>
+		<footer class="site-footer">
+			<div class="site-container">
+				<div class="footer-inner">
+					<div class="footer-info">
+						<div class="footer-info__left">
+							<img src="./src/images/footer.jpg" alt="about me image">
+							<p>Read more about me</p>
+						</div>
+						<div class="footer-info__right">
+							<h5>Get In Touch</h5>
+							<p class="footer-phone">Phone: +3367610382</p>
+							<p>Email : sanasattar057@gmail.com</p>
+							<div class="social-icons">
+								<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
+										alt="social icon"></a>
+								<a href="https://github.com/Sana-Sattar-2" target="_blank"><img
+										src="./src/images/social-pinterest.png" alt="social icon"></a>
+								<a href="https://www.youtube.com/channel/UCNEvYyniCsJxEJrpvB6vdBA/community?pvf=CAI%253D"
+									target="_blank"><img src="./src/images/social-youtube.png" alt="social icon"></a>
+								<a href="#" target="_blank"><img src="./src/images/social-twitter.png"
+										alt="social icon"></a>
+							</div>
 						</div>
 					</div>
+					<div class="footer-contact-form">
+						<h5 class="text-center text-md-left">Contact Form</h5>
+						<form class="contact-form">
+							<div class="contact-form__input">
+								<input type="text" name="name" placeholder="Name">
+								<input type="email" name="email" placeholder="Email">
+							</div>
+							<textarea></textarea>
+							<input type="submit" name="submit" value="Submit" class="submit-button">
+						</form>
+					</div>
 				</div>
-				<div class="footer-contact-form">
-					<h5 class="text-center text-md-left">Contact Form</h5>
-					<form class="contact-form">
-						<div class="contact-form__input">
-							<input type="text" name="name" placeholder="Name">
-							<input type="email" name="email" placeholder="Email">
-						</div>
-						<textarea></textarea>
-						<input type="submit" name="submit" value="Submit" class="submit-button">
-					</form>
+
+				<div class="container-fluide">
+					<div class="row">
+						<div class="col-md-12"> <iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13884.254033096988!2d71.62217282229662!3d29.543644764282128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9f002a616af5%3A0xb1f86244155ba226!2sLodhran!5e0!3m2!1sen!2s!4v1749139845682!5m2!1sen!2s"
+								width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+					</div>
 				</div>
 			</div>
+			<div class="footer-bottom">
 
-			<div class="container-fluide">
-				<div class="row">
-					<div class="col-md-12"> <iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13884.254033096988!2d71.62217282229662!3d29.543644764282128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9f002a616af5%3A0xb1f86244155ba226!2sLodhran!5e0!3m2!1sen!2s!4v1749139845682!5m2!1sen!2s"
-							width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-
-			<p class="text-center text-white">© 2025 | Design by <a href="#" class="text-warning fw-bold " target="_blank">Sana
-					Sattar</a> | All rights Reserved.</p>
+				<p class="text-center text-white">© 2025 | Design by <a href="#" class="text-warning fw-bold "
+						target="_blank">Sana
+						Sattar</a> | All rights Reserved.</p>
 
 
 
 
-			<!-- <div class="footer-bottom__img">
+				<!-- <div class="footer-bottom__img">
 					<img src="images/footer-mastercard.png" alt="footer image">
 					<img src="images/footer-paypal.png" alt="footer image">
 					<img src="images/footer-visa.png" alt="footer image">
 					<img src="images/footer-fedex.png" alt="footer image">
 					<img src="images/footer-dhl.png" alt="footer image">
 				</div> -->
-		</div>
+			</div>
 
-	</footer></section>
+		</footer>
+	</section>
 	<a href="whatsapp://send?text=Hello Shining starts! I am Sana Sattar , a Front-end-Developer&phone=+92367610382"
 		class="whatsapp-float" target="_blank">
 		<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
 	</a>
-		<script src="./projects/dashboard-design-made-by-Sana-Sattar/bootsrap/javascript.js"></script>
-
-<script>
-  const sections = document.querySelectorAll("section");
-  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-  // Click event for manual active link (already good)
-  navLinks.forEach(link => {
-    link.addEventListener("click", function () {
-      navLinks.forEach(l => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
-
-  // ScrollSpy: auto set active nav-link on scroll
-  window.addEventListener("scroll", () => {
-    let currentSection = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
-      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-        currentSection = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
-
-
-
-
-
+	<script src="./projects/dashboard-design-made-by-Sana-Sattar/bootsrap/javascript.js"></script>
 
 	<script>
+		const sections = document.querySelectorAll("section");
+		var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+		// Click event for manual active link (already good)
+		navLinks.forEach(link => {
+			link.addEventListener("click", function () {
+				navLinks.forEach(l => l.classList.remove("active"));
+				this.classList.add("active");
+			});
+		});
+
+		// ScrollSpy: auto set active nav-link on scroll
+		window.addEventListener("scroll", () => {
+			let currentSection = "";
+
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop - 120;
+				const sectionHeight = section.offsetHeight;
+				if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+					currentSection = section.getAttribute("id");
+				}
+			});
+
+			navLinks.forEach(link => {
+				link.classList.remove("active");
+				if (link.getAttribute("href") === `#${currentSection}`) {
+					link.classList.add("active");
+				}
+			});
+		});
+
+		document.querySelectorAll('.service-card').forEach(card => {
+			const icon = card.querySelector('.service-icon');
+
+			card.addEventListener('mouseenter', () => {
+				const ring = document.createElement('div');
+				ring.classList.add('icon-ring');
+				icon.appendChild(ring);
+			});
+
+			card.addEventListener('mouseleave', () => {
+				const ring = icon.querySelector('.icon-ring');
+				if (ring) {
+					ring.remove();
+				}
+			});
+		});
+
+		// Scroll animation (optional - keep from earlier)
+		const cards = document.querySelectorAll('.service-card');
+		function animateCards() {
+			const trigger = window.innerHeight * 0.9;
+			cards.forEach(card => {
+				const cardTop = card.getBoundingClientRect().top;
+				if (cardTop < trigger) {
+					card.classList.add('active');
+				} else {
+					card.classList.remove('active');
+				}
+			});
+		}
+		window.addEventListener('scroll', animateCards);
+		window.addEventListener('load', animateCards);
 
 		// Scrollspy Active Class Fix
 		const navLinks = document.querySelectorAll('.nav-link');
@@ -562,6 +822,7 @@
 				}
 			});
 		});
+	
 	</script>
 
 	<script>
