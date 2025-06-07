@@ -95,7 +95,7 @@
 			background-color: #f5f5f5;
 			font-family: 'Segoe UI', sans-serif;
 			overflow-x: hidden;
-			
+
 		}
 
 		.services-section {
@@ -116,13 +116,15 @@
 		.service-card.active {
 			opacity: 1;
 			transform: translateY(0);
-			
+
 		}
-.service-card:hover{
-	cursor: pointer;
-	background-color: rgb(65, 63, 63);
-	color: #f8f9fa;
-}
+
+		.service-card:hover {
+			cursor: pointer;
+			background-color: rgb(65, 63, 63);
+			color: #f8f9fa;
+		}
+
 		/* Ring that will be added dynamically */
 		.icon-ring {
 			position: absolute;
@@ -170,30 +172,32 @@
 		.service-desc {
 			color: #bbb3b3;
 		}
-		  .skills-section {
-      padding: 80px 20px;
-      text-align: center;
-    }
 
-    .progress {
-      height: 25px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-    }
+		.skills-section {
+			padding: 80px 20px;
+			text-align: center;
+		}
 
-    .progress-bar {
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: width 2s ease-in-out;
-    }
+		.progress {
+			height: 25px;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+		}
 
-    .skill-label {
-      margin-bottom: 8px;
-      font-weight: 500;
-      color: #333;
-    }
-		.f{
+		.progress-bar {
+			font-weight: 600;
+			font-size: 0.9rem;
+			transition: width 2s ease-in-out;
+		}
+
+		.skill-label {
+			margin-bottom: 8px;
+			font-weight: 500;
+			color: #333;
+		}
+
+		.f {
 			background-color: #e4c48a;
 		}
 	</style>
@@ -222,7 +226,7 @@
 					<li class="nav-item">
 						<a class="nav-link " href="#about" style="font-size: 1.15rem; ">About</a>
 					</li>
-						<li class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link " href="#services" style="font-size: 1.15rem; ">Services</a>
 					</li>
 					<li class="nav-item">
@@ -476,55 +480,59 @@
 			</div>
 		</div>
 	</section>
-<section class="skills-section" id="skills">
-  <div class="container">
-	<h2 class="universal-h2 universal-h2-bckg mb-5" style="padding-top: 50px;"> Skills & 
-		Experience</h2>
+	<section class="skills-section" id="skills">
+		<div class="container">
+			<h2 class="universal-h2 universal-h2-bckg mb-5" style="padding-top: 50px;"> Skills &
+				Experience</h2>
 
-    <div class="row gy-4 d-flex  align-items-center  justify-content-center mt-5">
+			<div class="row gy-4 d-flex  align-items-center  justify-content-center mt-5">
 
-      <div class="col-md-5">
-   <h6  class="fw-bold">HTML</h6>
-        <div class="progress">
-          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="95">HTML - 95%</div>
-        </div>
-      </div>
+				<div class="col-md-5">
+					<h6 class="fw-bold">HTML</h6>
+					<div class="progress">
+						<div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar"
+							style="width: 0%" data-progress="95">HTML - 95%</div>
+					</div>
+				</div>
 
-      <div class="col-md-5">
-       
-       <h6  class="fw-bold">CSS</h6>
-        <div class="progress">
-          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="90">CSS - 90%</div>
-        </div>
-      </div>
+				<div class="col-md-5">
 
-      <div class="col-md-5">
-      <h6 class="fw-bold">Bootstrap</h6>
-        <div class="progress">
-          <div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="85">Bootstrap - 85%</div>
-        </div>
-      </div>
+					<h6 class="fw-bold">CSS</h6>
+					<div class="progress">
+						<div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar"
+							style="width: 0%" data-progress="90">CSS - 90%</div>
+					</div>
+				</div>
 
-      <div class="col-md-5">
-     <h6 class="fw-bold">JavaScript</h6>
-        <div class="progress">
-          <div class="progress-bar  f progress-bar-animated  progress-bar-striped" role="progressbar" style="width: 0%" data-progress="80">JavaScript - 80%</div>
-        </div>
-      </div>
+				<div class="col-md-5">
+					<h6 class="fw-bold">Bootstrap</h6>
+					<div class="progress">
+						<div class="progress-bar f  progress-bar-animated  progress-bar-striped" role="progressbar"
+							style="width: 0%" data-progress="85">Bootstrap - 85%</div>
+					</div>
+				</div>
 
-    </div>
-  </div>
-</section>
+				<div class="col-md-5">
+					<h6 class="fw-bold">JavaScript</h6>
+					<div class="progress">
+						<div class="progress-bar  f progress-bar-animated  progress-bar-striped" role="progressbar"
+							style="width: 0%" data-progress="80">JavaScript - 80%</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 	<!-- About me end -->
 
 	<!-- Books and CD -->
-	<section id="portfolio"  style="overflow-x: hidden;overflow-y: hidden;">
+	<section id="portfolio" style="overflow-x: hidden;overflow-y: hidden;">
 		<div id=" p-lg-5" class="py-5">
 			<div class="container p-lg-5">
 				<h2 class="universal-h2 universal-h2-bckg text-center mb-5" data-aos="fade-up">Portfolio</h2>
 
-				<div class="row g-2 justify-content-center p-lg-5"  style="overflow-x: hidden;">
+				<div class="row g-2 justify-content-center p-lg-5" style="overflow-x: hidden;">
 
 					<!-- CARD TEMPLATE -->
 					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3 ">
@@ -588,13 +596,12 @@
 						</a>
 					</div>
 					<div class="col-12 col-sm-6 col-md-4 col-lg-4 p-lg-3">
-						<a href="./projects/dashboard/dashboard.html" target="_blank"
-							class="card-link w-100 shadow-lg">
+						<a href="./projects/dashboard/dashboard.html" target="_blank" class="card-link w-100 shadow-lg">
 							<div class="card-container">
 								<img src="./src/images/jamel full stack developer.png" alt="Project Image"
 									class="card-image">
 								<div class="card-overlay">
-									<h5 class="m-0">Sello  Dashboard</h5>
+									<h5 class="m-0">Sello Dashboard</h5>
 								</div>
 							</div>
 						</a>
@@ -632,7 +639,7 @@
 							delivering an outstanding experience!”</p>
 						<img src="./src/images/quotes.svg" alt="quotes svg">
 						<h4>Irzaa Shehbaz</h4>
-						<p>Full  Stack Developer</p>
+						<p>Full Stack Developer</p>
 					</div>
 				</div>
 			</div>
@@ -707,11 +714,13 @@
 				</div>
 
 				<div class="container-fluide">
-					<div class="row">
-						<div class="col-md-12"> <iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13884.254033096988!2d71.62217282229662!3d29.543644764282128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b9f002a616af5%3A0xb1f86244155ba226!2sLodhran!5e0!3m2!1sen!2s!4v1749139845682!5m2!1sen!2s"
+					<div class="row"> 
+						<div class="col-md-12">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.1697499320476!2d71.51187151694437!3d29.68585784268976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b0d43843f8427%3A0x10a150ef5481d5a5!2sAmina%20Girls%20Degree%20College%20(AGDC)!5e0!3m2!1sen!2s!4v1749317379966!5m2!1sen!2s"
 								width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -824,7 +833,7 @@
 				}
 			});
 		});
-	
+
 	</script>
 
 	<script>
