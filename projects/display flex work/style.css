@@ -1,0 +1,334 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background: linear-gradient(90deg, rgb(219, 1, 121), yellow);
+ 
+}
+
+
+.container {
+    height: 600px;
+    width: 80%;
+    border: 0px solid;
+    border-radius: 0px 200px 0px 200px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: space-evenly; */
+    justify-content: space-evenly;
+background-color: #f8f7f3;
+/* position: absolute;
+left: 20px; */
+
+}
+
+.cards {
+    height: 400px;
+    width: 30%;
+    border: 0px solid;
+    border-radius: 0px 40px 0px 40px;
+    display: flex;
+    /* gap: 20px; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+  background-color:#faefd9;
+    justify-content: space-evenly;
+}
+
+.cardsbox1 {
+    height: 200px;
+    width: 150px;
+    border: 0px solid;
+    background-color: #fbe7b2;
+    border-radius: 0px 50% 50% 50%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* text-align: center; */
+    /* align-content: center; */
+    align-items: center;
+    position: relative;
+    /* left: 0px; */
+    /* right: 10%; */
+
+}
+.cardsbox2 {
+    height: 200px;
+    width: 150px;
+    border: 0px solid;
+    background-color: #b7caf2;
+    border-radius: 0px 50% 50% 50%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* text-align: center; */
+    /* align-content: center; */
+    align-items: center;
+    position: relative;
+    /* left: 0px; */
+    /* right: 10%; */
+
+}
+.cardsbox3 {
+    height: 200px;
+    width: 150px;
+    border: 0px solid;
+    background-color:#b8e2cc;
+    border-radius: 0px 50% 50% 50%;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* text-align: center; */
+    /* align-content: center; */
+    align-items: center;
+    position: relative;
+    /* left: 0px; */
+    /* right: 10%; */
+
+}
+
+.star1{
+    font: 3em sans-serif;
+    position: absolute;
+    right: 0;
+    /* top: 20px; */
+    bottom: -20px;
+    color:rgb(252 203 63) ;
+
+
+}
+.star2 {
+    font: 3em sans-serif;
+    position: absolute;
+    right: 10;
+    /* top: 20px; */
+    bottom: -30px;
+    color: rgb(63 118 242);
+
+
+}
+.star3 {
+    font: 3em sans-serif;
+    position: absolute;
+    /* right: 10; */
+    /* top: 20px; */
+    /* bottom: -30px; */
+    color: rgb(7, 160, 160);
+    /* top: 10%; */
+    left: 90%;
+
+  
+
+
+}
+
+.cardboxes {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    border: 0px solid;
+    font-size: 30px;
+    color:rgb(252 203 63);
+    position: relative;
+    /* left: 0px; */
+    right: 0%;
+
+}
+.cardboxes {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    border: 0px solid;
+    font-size: 30px;
+    color:rgb(252 203 63);
+    position: relative;
+    /* left: 0px; */
+    right: 0%;
+
+}
+
+.cardbody {
+    border: 0px solid;
+    height: 250px;
+    flex-basis: 50%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    flex-shrink: 1;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* justify-content:center; */
+    /* justify-content: space-around; */
+    padding: 20px;
+    border-radius: 0px 0px 0px 35px;
+
+}
+
+.cardcontent1 {
+    border: 0px solid;
+    width: 70%px;
+    height: 50px;
+    font: 2em sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 25px;
+    color: #161a20;
+    /* justify-content: space-around; */
+
+}
+
+.cardcontent2 {
+    border: 0px solid;
+    flex-basis: 500px;
+    height: 100px;
+    font: 1em sans-serif;
+    display: flex;
+    color:lightslategray;
+    align-items: center;
+    padding-left: 25px;
+    /* justify-content: space-around; */
+}
+
+.cardcontent3 {
+    border: 0px solid;
+    width: 70%px;
+    height: 100px;
+    font: 1em sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgb(252 203 63);
+    padding-left: 25px;
+}
+.cardcontent4 {
+    border: 0px solid;
+    width: 70%px;
+    height: 100px;
+    font: 1em sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color:  rgb(63 118 242);
+    padding-left: 25px;
+}
+.cardcontent5 {
+    border: 0px solid;
+    width: 70%px;
+    height: 100px;
+    font: 1em sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgb(7, 160, 160);
+    padding-left: 25px;
+}
+
+.addition1 {
+    font-size: 30px;
+}
+
+.cardboxes1 {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 0px solid;
+    font-size: 100px;
+    color: rgb(63 118 242);
+    position: relative;
+    left: 0px;
+    right: 0%;
+
+}
+
+.cards1 {
+    height: 400px;
+    width: 30%;
+    border: 0px solid;
+    border-radius: 0px 40px 0px 40px;
+    display: flex;
+    /* gap: 20px; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+   background-color:#dde3f3;
+    justify-content: space-evenly;
+}
+
+.cards2 {
+    height: 400px;
+    width: 30%;
+    border: 0px solid;
+    border-radius: 0px 40px 0px 40px;
+    display: flex;
+    /* gap: 20px; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+background-color:#deeee3;
+    justify-content: space-evenly;
+}
+
+.addition3 {
+    font: 2em sans-serif;
+    font-size: 60px;
+    color: rgb(7, 160, 160);
+}
+
+.addition1 {
+    font: 2em sans-serif;
+    font-size: 60px;
+}
+.body2{
+    position: absolute;
+    right: 140px;
+    top:200px ;
+    color: rgb(102, 102, 13);
+    font-size: 20px;
+}
+.body3{
+    position: absolute;
+    left: 140px;
+    top:200px ;
+    color: rgb(98, 79, 206);
+    font-size: 20px;
+}
+.body4{
+    position: absolute;
+    /* top: 140px; */
+    top:50px ;
+    color: rgb(233, 27, 205);
+    font-size: 50px;
+}
+.body5{
+    position: absolute;
+    right: 600px;
+    bottom: 50px;
+    color: rgb(233, 27, 61);
+    font-size: 50px;
+}
