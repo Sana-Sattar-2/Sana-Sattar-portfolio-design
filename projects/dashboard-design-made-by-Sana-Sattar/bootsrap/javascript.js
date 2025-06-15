@@ -6342,3 +6342,16 @@
       }
     });
   });
+    // Close navbar when a nav-link is clicked (only in collapsed view)
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const isExpanded = document.querySelector('.navbar-toggler').getAttribute('aria-expanded');
+
+      if (isExpanded === 'true') {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: true
+        });
+      }
+    });
+  });
