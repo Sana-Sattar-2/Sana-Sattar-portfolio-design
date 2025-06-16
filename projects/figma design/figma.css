@@ -32,6 +32,12 @@ border-radius: 0% 0% 90% 20%;
 #bg{
     /* box-shadow: 10px 10px 10px 10px blue; */
 }
+  @media (max-width: 991.98px) {
+    #responsive-img img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
 @media  (max-height:576px){
     #fullwidth{
         width:100%;

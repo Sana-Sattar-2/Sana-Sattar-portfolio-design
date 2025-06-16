@@ -2,151 +2,165 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enji Dev Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enji Dev Portfolio</title>
 
-  <!-- ✅ Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7Og1Emf1aVMG6wcv16O3+cD92p7Z3pX2VG+" crossorigin="anonymous">
+    <!-- ✅ Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7Og1Emf1aVMG6wcv16O3+cD92p7Z3pX2VG+" crossorigin="anonymous">
 
-  <!-- Remix Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-  <!-- Your custom styles -->
-  <link rel="stylesheet" href="figmaa bootsrap.css">
-  <link rel="stylesheet" href="figma.css">
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="figmaa bootsrap.css">
+    <link rel="stylesheet" href="figma.css">
 </head>
 
 <body style="overflow-x: hidden;">
-   
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid ps-5 pe-5">
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+        <div class="container-fluid px-4">
+            <!-- Brand -->
             <a class="navbar-brand" href="#">
-                <strong class="h1"> enji<span class="text-primary">dev</span></strong>
+                <strong class="h1">enji<span class="text-primary">dev</span></strong>
             </a>
+
+            <!-- Hamburger / Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0  ms-5 gap-5 text-primary">
-                    <li class="nav-item ">
-                        <a class="nav-link text-primary " aria-current="page" href="#">
-                            <strong>Blog</strong> </a>
-                    </li>
 
-                    <li class="nav-item ">
-                        <a class="nav-link text-primary " aria-current="page" href="#">
-                            <strong>FAQ</strong> </a>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5 gap-lg-4 text-primary">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">Blog</a>
                     </li>
-                    <li class="nav-item  ">
-                        <a class="nav-link text-primary" href="#"><strong>Work</strong> </a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">FAQ</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-primary" href="#"><strong>Services</strong> </a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">Work</a>
                     </li>
-                  
-                    <li class="nav-item  ">
-                        <a class="nav-link text-primary" href="#">
-                            <strong>About </strong></a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">Services</a>
                     </li>
-                    <li class="nav-item   ">
-                        <a class="nav-link text-primary" href="#"><strong>Contact </strong> </a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-primary" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex gap-3" role="search">
-                   
-                    <strong class="h4 "><i class="ri-github-line"></i>&nbsp; &nbsp;<i
-                            class="ri-twitter-line"></i>&nbsp;&nbsp;<i class="ri-claude-line"></i></strong>
-                </form>
+
+                <!-- Icons -->
+                <div class="d-flex align-items-center gap-3 fs-4 text-dark">
+                    <i class="ri-github-line"></i>
+                    <i class="ri-twitter-line"></i>
+                    <i class="ri-claude-line"></i> <!-- Replace with another icon if needed -->
+                </div>
             </div>
         </div>
     </nav>
-    <div class="container-fluide bg-light pb-5" id="fullwidth">
-        <div class="container  " id="bg">
-            <div class="row d-flex align-item-center justify-content-center">
-                <div class="col-md-8 col-sm-12  ">
 
-                    <div class="container pt-5 mt-5 ">
-                        <h1 id="font"> <strong style="font-size: 70px;" id="font"  > I’m <span class="text-primary  "  > Enji</span>
-                                Kusnadi.</strong> </h1>
+    <div class="container-fluid bg-light pb-5" id="fullwidth">
+        <div class="container" id="bg">
+            <div class="row d-flex align-items-center justify-content-center">
+                <!-- TEXT PART -->
+                <div class="col-md-8 col-sm-12">
+
+                    <div class="container pt-5 mt-5">
+                        <h1 id="font">
+                            <strong style="font-size: 70px;"> I’m <span class="text-primary"> Enji</span>
+                                Kusnadi.</strong>
+                        </h1>
                         <div class="h6 pt-3">seorang designer dan developer.</div>
-                        <button type="button " class="btn btn-primary mt-3"><strong> Hire me </strong></button>
-                        <button type="button " class="btn text-primary mt-3"> <strong>Resume</strong></button>
-                        <div class="mt-5 pt-5">
-                            <span class="text-secondary  " style="font-size: 13px;">tech stack / tools favorit saat ini:
 
-                            </span>
+                        <button type="button" class="btn btn-primary mt-3"><strong> Hire me </strong></button>
+                        <button type="button" class="btn text-primary mt-3"><strong>Resume</strong></button>
+
+                        <div class="mt-5 pt-5">
+                            <span class="text-secondary" style="font-size: 13px;">tech stack / tools favorit saat
+                                ini:</span>
                         </div>
-                        <h6 class="">
+                        <h6>
                             <img src="./images/sd.png" alt="">&nbsp;&nbsp;
                             <img src="./images/j.png" alt="">&nbsp;&nbsp;
                             <img src="./images/k.png" alt="">&nbsp;&nbsp;
                             <img src="./images/s.png" alt="">
                         </h6>
                     </div>
-
-
                 </div>
-                <div class="col-md-3 bg-primary pt-5 ms-4 me-5" style="border-radius: 0% 0% 55% 50%;" id="hidden">
-                    <div class="container-fluid pt-5"> <img src="./images/slide 5 1.png" alt="" id="img1"></div>
-                    <div class="container-fluid" style="margin-bottom: -10px; margin-right: 130px; margin-left: px;"> <img
-                            src="./images/slide 5 2.png" alt="" id="img2"></div>
 
+                <!-- IMAGE PART -->
+                <div class="col-lg-3 d-none d-lg-block bg-primary pt-5 ms-4 me-5" style="border-radius: 0% 0% 55% 50%;"
+                    id="hidden">
+                    <div class="container-fluid pt-5">
+                        <img src="./images/slide 5 1.png" alt="" id="img1">
+                    </div>
+                    <div class="container-fluid" style="margin-bottom: -10px; margin-right: 130px;">
+                        <img src="./images/slide 5 2.png" alt="" id="img2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="row g-3 justify-content-center">
+            <!-- Box 1 -->
+            <div class="col-md-4">
+                <div class="border rounded bg-white p-3 d-flex align-items-start">
+                    <div class="me-3" style="width: 50px;">
+                        <img src="./images/star.png" alt="" class="img-fluid">
+                    </div>
+                    <div>
+                        <h5 class="mb-1">Clean & Modern Style</h5>
+                        <p class="mb-0">Senang membuat design yang modern, clean serta UI yang intuitif</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-md-4">
+                <div class="border rounded bg-white p-3 d-flex align-items-start">
+                    <div class="me-3" style="width: 50px;">
+                        <img src="./images/heart.png" alt="" class="img-fluid">
+                    </div>
+                    <div>
+                        <h5 class="mb-1">Detail Oriented</h5>
+                        <p class="mb-0">Tantangan terbesarnya: aksesibilitas, browser kompatibilitas responsive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-md-4">
+                <div class="border rounded bg-white p-3 d-flex align-items-start">
+                    <div class="me-3" style="width: 50px;">
+                        <img src="./images/hdd.png" alt="" class="img-fluid">
+                    </div>
+                    <div>
+                        <h5 class="mb-1">Fast & Optimized</h5>
+                        <p class="mb-0">Penulisan code yang terstruktur, optimal serta efisien.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<div class="container "  >
-    <div class="row g-3 justify-content-center" >
-        <!-- Box 1 -->
-        <div class="col-md-4">
-            <div class="border rounded bg-white p-3 d-flex align-items-start">
-                <div class="me-3" style="width: 50px;">
-                    <img src="./images/star.png" alt="" class="img-fluid">
-                </div>
-                <div>
-                    <h5 class="mb-1">Clean & Modern Style</h5>
-                    <p class="mb-0">Senang membuat design yang modern, clean serta UI yang intuitif</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Box 2 -->
-        <div class="col-md-4">
-            <div class="border rounded bg-white p-3 d-flex align-items-start">
-                <div class="me-3" style="width: 50px;">
-                    <img src="./images/heart.png" alt="" class="img-fluid">
-                </div>
-                <div>
-                    <h5 class="mb-1">Detail Oriented</h5>
-                    <p class="mb-0">Tantangan terbesarnya: aksesibilitas, browser kompatibilitas responsive.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="col-md-4">
-            <div class="border rounded bg-white p-3 d-flex align-items-start">
-                <div class="me-3" style="width: 50px;">
-                    <img src="./images/hdd.png" alt="" class="img-fluid">
-                </div>
-                <div>
-                    <h5 class="mb-1">Fast & Optimized</h5>
-                    <p class="mb-0">Penulisan code yang terstruktur, optimal serta efisien.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
     <div class="container mt-5 ">
         <div class="row d-flex align-item-center justify-content-center">
 
-            <div class="col-md-12 d-flex align-item-center justify-content-center" ><span class="h1 text-secondary sana" ><img
-                        src="./images/“.svg" alt="" > beautiful</span></div>
+            <div class="col-md-12 d-flex align-item-center justify-content-center"><span
+                    class="h1 text-secondary sana"><img src="./images/“.svg" alt=""> beautiful</span></div>
         </div>
         <div class="row d-flex align-item-center justify-content-center ">
             <div class="col-md-3"></div>
@@ -154,7 +168,8 @@
 
             </div>
             <div class="col-md-4" id="f">
-                <span class="text-secondary h1 " id="f"> <strong>inside  &nbsp;</strong>  and &nbsp;<strong> &nbsp; out</strong>
+                <span class="text-secondary h1 " id="f"> <strong>inside &nbsp;</strong> and &nbsp;<strong> &nbsp;
+                        out</strong>
 
                 </span>
             </div>
@@ -173,7 +188,7 @@
         </div>
 
     </div>
- 
+
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">
@@ -188,92 +203,73 @@
     </div>
     <div class="container-fluid bg-light ">
 
-    <div class="container ">
-        <div class="row ">
-            <div class="col-lg-12  col-md-12 col-xl-6">
-                <div class="container mt-5">
-                    <div class="row border rounded bg-white">
-                        <h4 class="text-primary">Spacing</h4>
-                        <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
-                            saturasi.</p>
-                    </div>
-                    <div class="row border rounded mt-3 bg-white">
-                        <h4 class="text-primary">Typography</h4>
-                        <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
-                            saturasi.</p>
-                    </div>
-                    <div class="row border rounded mt-3 bg-white mb-5">
-                        <h4 class="text-primary">Color Palete</h4>
-                        <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
-                            saturasi.</p>
-                    </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12  col-md-12 col-xl-6">
+                    <div class="container mt-5">
+                        <div class="row border rounded bg-white">
+                            <h4 class="text-primary">Spacing</h4>
+                            <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
+                                saturasi.</p>
+                        </div>
+                        <div class="row border rounded mt-3 bg-white">
+                            <h4 class="text-primary">Typography</h4>
+                            <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
+                                saturasi.</p>
+                        </div>
+                        <div class="row border rounded mt-3 bg-white mb-5">
+                            <h4 class="text-primary">Color Palete</h4>
+                            <p class="text-secondary">Pemilihan warna yang tepat, seperti kombinasi warna dan tingkat
+                                saturasi.</p>
+                        </div>
 
+                    </div>
                 </div>
+            <div class="col-lg-12 col-md-12 col-xl-6" id="responsive-img">
+    <div class="container border p-4 rounded bg-white" style="margin-top: -20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/Rectangle 20.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-12  col-md-12 col-xl-6" >
-
-
-                <div class="container border p-4 rounded bg-white" style="margin-top: -20px;" >
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="container">
-<img src="./images/Rectangle 20.png" alt="" height="100%" width="100%">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="container">
-<div class="row mt-2">
-    <img src="./images/Rectangle 21.png" alt="" height="100%" width="100%" >
-</div>
-<div class="row mt-2">
-    <img src="./images/Rectangle 22.png" alt="" height="100%" width="100%">
-</div>
-<div class="row mt-2">
-    <div class="col-md-6">    <img src="./images/Rectangle 23.png" alt=""  width="100%"></div>
-
-</div>
-
-
-<div class="row">
-
-</div>
-<div class="row mt-1">
-    
-</div>
-
-<div class="row mt-5">
-
-</div>
-<div class="row">
-    
-</div>
-
-<div class="row mt-5">
-<div class="col-md-4 mt-5">
-    <img src="./images/Rectangle 25.png" alt="" width="100%">
-</div>
-</div>
-
-<div class="row  mt-3">
-    <div class="col-md-12"><img src="./images/Rectangle 24.png" alt="" width="100%"></div>
-</div>
-                            </div>
-                        </div>
+            <div class="col-md-6">
+                <div class="row mt-2">
+                    <img src="./images/Rectangle 21.png" class="img-fluid" alt="">
+                </div>
+                <div class="row mt-2">
+                    <img src="./images/Rectangle 22.png" class="img-fluid" alt="">
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <img src="./images/Rectangle 23.png" class="img-fluid" alt="">
                     </div>
-
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4 mt-5">
+                        <img src="./images/Rectangle 25.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <img src="./images/Rectangle 24.png" class="img-fluid" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+            </div>
+        </div>
     </div>
     <div class="container mt-5 mb-5" id="w">
-      <div class="row mt-5 mb-5">
-        <div class="h5 text-danger">Detail Oriented</div>
-        <h2 > <strong>Lighthouse, Accessibility & Browser Support.</strong></h2>
-        <p class="text-secondary">Awareness to ease of access, User Interface consistency, and improved User Experience.</p>
-        <span class="text-primary"> <strong>UI Consistency &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Lighthouse Score</strong></span>
-      </div>
+        <div class="row mt-5 mb-5">
+            <div class="h5 text-danger">Detail Oriented</div>
+            <h2> <strong>Lighthouse, Accessibility & Browser Support.</strong></h2>
+            <p class="text-secondary">Awareness to ease of access, User Interface consistency, and improved User
+                Experience.</p>
+            <span class="text-primary"> <strong>UI Consistency &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Lighthouse Score</strong></span>
+        </div>
     </div>
     <div class="container mt-5">
         <div class="row mt-5">
@@ -282,15 +278,18 @@
                     Design Concept
                     Fonts & Colors
                     Source Code</h6>
-                  <p class="d-flex align-item-center justify-content-center">Kebijakan Privasi · Ketentuan Layanan </p><p class="d-flex align-item-center justify-content-center">
+                <p class="d-flex align-item-center justify-content-center">Kebijakan Privasi · Ketentuan Layanan </p>
+                <p class="d-flex align-item-center justify-content-center">
                     © 2022, Enji Kusnadi.</p>
             </div>
         </div>
     </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Qrm2bUggPUKXgC3FF8F5EZ5zDFGgSnv1Ezr9mK0ehRGwzDezIxW1tWg0rQgFv5as" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Qrm2bUggPUKXgC3FF8F5EZ5zDFGgSnv1Ezr9mK0ehRGwzDezIxW1tWg0rQgFv5as"
+        crossorigin="anonymous"></script>
 
-  <!-- Your custom JavaScript -->
-  <script src="./javaScr.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="./javaScr.js"></script>
 </body>
 
 </html>
